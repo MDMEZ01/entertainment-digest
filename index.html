@@ -15,8 +15,8 @@
   .section-header { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: #6b7280; margin: 32px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #e5e7eb; }
   .card { background: #ffffff; border-radius: 10px; border-left: 5px solid #ccc; padding: 16px 18px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
   .card h3 { font-size: 16px; font-weight: 700; color: #111827; margin-bottom: 10px; line-height: 1.4; }
-  .card > ul, .card-body > ul { padding-left: 18px; margin: 0; }
-  .card > ul > li, .card-body > ul > li { font-size: 14px; color: #374151; margin-bottom: 8px; line-height: 1.5; }
+  .card > ul { padding-left: 18px; margin: 0; }
+  .card > ul > li { font-size: 14px; color: #374151; margin-bottom: 8px; line-height: 1.5; }
   .card ul ul { margin-top: 4px; margin-bottom: 2px; padding-left: 18px; list-style-type: circle; }
   .card ul ul li { font-size: 13px; color: #4b5563; margin-bottom: 3px; line-height: 1.45; }
   .card-footer { display: flex; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
@@ -25,24 +25,24 @@
   .wire-tag { background: #eef2ff; color: #3730a3; }
   .read-more { font-size: 12px; font-weight: 600; color: #4f46e5; text-decoration: none; margin-left: auto; padding: 10px 2px; cursor: pointer; }
   .read-more:hover { text-decoration: underline; }
-  .card-breaking   { border-left-color: #e63946; }
-  .card-film       { border-left-color: #e63946; }
-  .card-tv         { border-left-color: #457b9d; }
-  .card-streaming  { border-left-color: #a855f7; }
-  .card-music      { border-left-color: #2a9d8f; }
-  .card-tech       { border-left-color: #e9c46a; }
-  .card-ai         { border-left-color: #0891b2; }
-  .card-biz        { border-left-color: #f4a261; }
-  .card-icymi      { border-left-color: #0ea5e9; }
+  .card-breaking { border-left-color: #e63946; }
+  .card-film { border-left-color: #e63946; }
+  .card-tv { border-left-color: #457b9d; }
+  .card-streaming { border-left-color: #a855f7; }
+  .card-music { border-left-color: #2a9d8f; }
+  .card-tech { border-left-color: #e9c46a; }
+  .card-ai { border-left-color: #0891b2; }
+  .card-biz { border-left-color: #f4a261; }
+  .card-icymi { border-left-color: #0ea5e9; }
   .icymi-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; align-items: center; }
-  .badge-ongoing  { background: #e0f2fe; color: #0369a1; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
-  .badge-updated  { background: #dcfce7; color: #166534; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
-  .badge-running  { background: #f1f5f9; color: #475569; font-size: 11px; padding: 2px 8px; border-radius: 12px; }
+  .badge-ongoing { background: #e0f2fe; color: #0369a1; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
+  .badge-updated { background: #dcfce7; color: #166534; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
+  .badge-running { background: #f1f5f9; color: #475569; font-size: 11px; padding: 2px 8px; border-radius: 12px; }
   .chip-new { background: #fef9c3; color: #854d0e; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 8px; margin-left: 4px; vertical-align: middle; }
-  .card-deepdive  { border-left-color: #6d28d9; }
+  .card-deepdive { border-left-color: #6d28d9; }
   .deep-label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #6d28d9; margin: 10px 0 3px; }
   .deep-label:first-child { margin-top: 0; }
-  .card-numbers   { border-left-color: #059669; }
+  .card-numbers { border-left-color: #059669; }
   .numbers-label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #059669; margin: 10px 0 3px; }
   .numbers-label:first-child { margin-top: 0; }
   .footer-block { text-align: center; color: #6b7280; font-size: 12px; margin-top: 32px; padding-top: 16px; border-top: 1px solid #e5e7eb; }
@@ -56,949 +56,393 @@
 </style>
 </head>
 <body>
-
 <div class="header">
   <div class="badge">Morning Edition</div>
   <h1>🎬 Daily Entertainment &amp; Tech Update</h1>
   <div class="date">Saturday, August 29, 2026</div>
 </div>
-
 <div class="container">
-
-<!-- MEDIA BUSINESS -->
 <div class="section-header">📊 Media Business</div>
-
 <div class="card card-biz">
-  <h3>David Zaslav's "Hamptons Greenlight Club" Reflects WBD's Centralized Content Strategy</h3>
+  <h3>Paramount Skydance vs. Netflix: $110B–$82B Media Collision Reshapes 2026 M&amp;A</h3>
   <ul>
-    <li>Warner Bros. Discovery CEO David Zaslav has established a selective greenlight process shaped around a Hamptons-based decision-making circle, consolidating content approvals around his inner circle.
-      <ul>
-        <li>Kim Masters reveals how the strategy determines which projects get greenlit versus shelved, underlining Zaslav's hands-on stewardship of the studio's output post-Paramount merger negotiations.</li>
-      </ul>
-    </li>
+    <li>Two mega-deals battle for advantage: Netflix's $82.7B acquisition of Warner Bros.' film/TV studios and HBO versus Paramount Skydance's $110B hostile bid for Warner Bros. Discovery.<ul><li>DOJ cleared Paramount-WBD in June; twelve state attorneys general sued to block it, trial dates contested between Paramount's November and states' April 2027.</li><li>Netflix's deal continues moving toward Discovery Global spin-off expected in Q3 2026.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / The Backstory</span>
-    <a class="read-more" href="https://puck.news/the-zaslav-value-pack-wbs-hamptons-greenlight-club/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-biz">
-  <h3>YouTube Dangles Deals Up to $10M to Stop Netflix From Poaching Creators</h3>
+  <h3>Electronic Arts Private Deal; Charter-Cox Signal PE Confidence Surge</h3>
   <ul>
-    <li>Neal Mohan's platform is throwing serious money at top creators and podcasters to keep them exclusive, as Netflix raids talent YouTube once dismissed as a "farm league."
-      <ul>
-        <li>The Ankler's Natalie Jarvey identifies 15 creators who've fielded offers; one dealmaker says the response shows YouTube is "scared shitless" of losing its stars to Ted Sarandos.</li>
-      </ul>
-    </li>
+    <li>Silver Lake, Saudi Arabia's PIF and Affinity Partners taking EA private for $55B; Charter Communications buying Cox for $34.5B.<ul><li>M&amp;A surge follows Paramount-WBD DOJ approval clearing regulatory uncertainty in June.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">The Ankler / Ankler Agenda</span>
-    <a class="read-more" href="https://theankler.com/15-creators-deals-up-to-10m-inside-youtubes-war-to-fend-off-netflix/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">AlixPartners</span><a class="read-more" href="https://www.alixpartners.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-biz">
-  <h3>Microsoft Pitches Hollywood a $300M-Plus Bulk Deal for Xbox's Biggest Game Franchises</h3>
+  <h3>YouTube Dangles $10M Creator Deals to Stop Netflix Raiding Talent</h3>
   <ul>
-    <li>Xbox is quietly shopping a package of more than a dozen titles — Halo, World of Warcraft, Elder Scrolls, Diablo and more — to a single studio or streamer, with Netflix, Paramount and Universal all said to be taking a look.
-      <ul>
-        <li>Microsoft is now the largest video game publisher outside China but cut 3,200 Xbox jobs in July; one source says it wants "more than $300 million" for a long-term rights deal, a price that has already made at least one suitor balk.</li>
-      </ul>
-    </li>
+    <li>Neal Mohan's platform offering serious money to keep top creators exclusive, as Netflix raids talent YouTube once dismissed.<ul><li>Ankler identified 15 creators with offers; dealmaker says YouTube is "scared shitless" of losing stars to Ted Sarandos.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/why-are-uk-television-producers-so-anxious/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span><a class="read-more" href="https://theankler.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-biz">
-  <h3>U.K. TV Producers Scramble for Leverage as Streamers Swallow Their I.P.</h3>
+  <h3>Nexstar–Tegna $6.2B Deal Frozen; Board Dispute Heads to Ninth Circuit</h3>
   <ul>
-    <li>At the Edinburgh TV Festival, three top British producers laid out diverging survival bets against U.S. streamers that, unlike the BBC and Channel 4, don't grant producers ownership of what they make.
-      <ul>
-        <li>Banijay U.K.'s Patrick Holland is betting on scale via the new All3Media merger; Nutopia's Jane Root is bypassing broadcasters and streamers entirely, building star-driven shows with Will Smith and Jeff Goldblum straight for YouTube.</li>
-      </ul>
-    </li>
+    <li>Broadcast consolidation deal remains in regulatory limbo, with Judge Nunley's special master proposal and Nexstar's Ninth Circuit appeal pending oral arguments in November or December.</li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/why-are-uk-television-producers-so-anxious/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-biz">
-  <h3>Apple TV+ Jumps to $15/Month; Apple One Climbs to $22</h3>
+  <h3>Apple TV+ Jumps to $15/Month; Apple One to $22 Ahead of "Ted Lasso" Finale</h3>
   <ul>
-    <li>The $2 hikes land just weeks before "Ted Lasso" wraps its run on Oct. 7, putting pressure back on Disney to raise Disney+/Hulu prices again this fall.
-      <ul>
-        <li>Apple TV added Jamie Dornan to the upcoming Megan Park film alongside Zoë Kravitz and Adèle Exarchopoulos, and will begin screen-testing actors next month for the next James Bond film.</li>
-      </ul>
-    </li>
+    <li>$2 hikes land just before "Ted Lasso" wraps Oct. 7, pressuring Disney to raise Disney+/Hulu prices this fall.<ul><li>Apple TV added Jamie Dornan to upcoming Megan Park film; will screen-test actors next month for next James Bond.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">The Ankler / The Wakeup</span>
-    <a class="read-more" href="https://www.hollywoodreporter.com/tv/tv-news/apple-tv-price-hike-streaming-plans-monthly-annual-1236684161/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span><a class="read-more" href="https://www.hollywoodreporter.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
-<!-- BREAKING NEWS -->
 <div class="section-header">🔴 Breaking News</div>
-
 <div class="card card-breaking">
-  <h3>Lil Nas X's Mother, Tameka Hill, Dies</h3>
+  <h3>Judge Jackie Glass, "Swift Justice" Host, Dies at 70 in Las Vegas</h3>
   <ul>
-    <li>The "Old Town Road" rapper announced his mother's death on Instagram Saturday morning, sharing pictures and calling her "the baddest ever."
-      <ul>
-        <li>Tributes from the hip-hop and entertainment community followed the announcement.</li>
-      </ul>
-    </li>
+    <li>Former Clark County judge who hosted syndicated court show died Friday afternoon; one of small cadre of actual jurists who crossed over to daytime TV.</li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">TMZ</span>
-    <a class="read-more" href="https://www.tmz.com/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-breaking">
-  <h3>Peter Cullen, the Voice of Optimus Prime, Dies at 85</h3>
+  <h3>Nvidia Adds $400B in Value After Blowout Earnings; Revenue Doubles to $96B</h3>
   <ul>
-    <li>Cullen died in Los Angeles surrounded by family; beyond the "Transformers" franchise, he also voiced Eeyore in "Winnie the Pooh" and the villainous KITT-rival KARR in "Knight Rider."
-      <ul>
-        <li>Tributes poured in across Hollywood and the voice-acting community this week.</li>
-      </ul>
-    </li>
+    <li>CEO Jensen Huang told investors AI demand is "accelerating," with guidance implying roughly 70% forward revenue growth.<ul><li>Results landed same week Nvidia finalizing $12.9B deal to acquire Hugging Face, consolidating control over open-source AI infrastructure.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Hollywood Reporter</span>
-    <a class="read-more" href="https://www.hollywoodreporter.com/movies/movie-news/peter-cullen-optimus-prime-transformers-eeyore-1236683075/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Fortune</span><a class="read-more" href="https://fortune.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-breaking">
-  <h3>Andrea Eastman, Casting Director on "The Godfather," Dies at 86</h3>
+  <h3>Lea Michele Turns 40; Brittany Cartwright Files Restraining Order vs. Jax Taylor</h3>
   <ul>
-    <li>The former ICM agent and casting director died at her home in Santa Barbara; she helped shape the casts of some of the most celebrated films of the New Hollywood era.</li>
+    <li>"Glee" star celebrated 40th birthday with career highlights spanning TV, theater, music.<ul><li>Separately, "Summer House" star filed domestic violence temporary restraining order against Jax Taylor in divorce, judge ordering him 100 yards away.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Variety</span>
-    <a class="read-more" href="https://variety.com/2026/biz/news/andrea-eastman-dead-godfather-1236845555/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">TMZ</span><a class="read-more" href="https://www.tmz.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
-<div class="card card-breaking">
-  <h3>Nvidia Adds $400B in Value After Blowout Earnings, Revenue Nearly Doubles to $96B</h3>
-  <ul>
-    <li>CEO Jensen Huang told investors AI demand is "accelerating," with guidance implying roughly 70% forward revenue growth.
-      <ul>
-        <li>The results landed the same week Nvidia was reported to be finalizing a separate $12.9B deal to acquire AI model-hub Hugging Face (more in Artificial Intelligence, below).</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Fortune / Eye on AI</span>
-    <a class="read-more" href="https://fortune.com/section/eye-on-ai/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<!-- FILM & FESTIVALS -->
 <div class="section-header">🎥 Film &amp; Festivals</div>
-
 <div class="card card-film">
-  <h3>Willem Dafoe Joins Voice Cast of "Lincoln in the Bardo" Animated Adaptation</h3>
+  <h3>"Coyote vs. Acme" Tracking $12M-$14M: Warner Write-Off Becomes Chart Victory</h3>
   <ul>
-    <li>Dafoe joins Jonathan Bailey and Peter Dinklage in Starburns Industries' animated film based on George Saunders' 2017 Booker Prize-winning novel.
-      <ul>
-        <li>The prestigious literary adaptation continues Starburns' strategy of pairing A-list vocal talent with literary prestige for streaming and theatrical release.</li>
-      </ul>
-    </li>
+    <li>Live-action/animated hybrid dropped as tax write-off, rescued for ~$50M, now tracking above forecasts with 96% Rotten Tomatoes score.<ul><li>Matt Belloni reported "everyone in town except David Zaslav is rooting for" the film to outperform against Ridley Scott's underperforming "Dog Stars."</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span><a class="read-more" href="https://puck.news/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-film">
-  <h3>"Coyote vs. Acme" Eyes a $12M-$14M Debut After Warner Nearly Buried It</h3>
+  <h3>Ridley Scott's "The Dog Stars" Tracks $13M: Second Late-August Stumble for Director</h3>
   <ul>
-    <li>Ketchup Entertainment's live-action/animated hybrid — dropped by Warner Bros. as a planned tax write-off and rescued for roughly $50M — is tracking well above its earlier lowball forecasts after a 96% Rotten Tomatoes score.
-      <ul>
-        <li>Matt Belloni wrote this week that "everyone in town except David Zaslav is rooting for" the film to outperform; full weekend actuals post Sunday/Monday.</li>
-      </ul>
-    </li>
+    <li>$100M-budget post-apocalyptic drama opening well below expectations.<ul><li>"At age 88 and staring at a $70 million bust, I'm sad to say the Ridley originals business might be over," Belloni wrote.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/why-are-uk-television-producers-so-anxious/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span><a class="read-more" href="https://puck.news/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-film">
-  <h3>Ridley Scott's "The Dog Stars" Tracks for Just ~$13M, a Second Straight Late-August Stumble</h3>
+  <h3>Disney Sets Theatrical Dates for "Lilo &amp; Stitch 2," "The Incredibles 3" Sequels</h3>
   <ul>
-    <li>The roughly $100M-budget post-apocalyptic drama is opening well below expectations against "Coyote vs. Acme."
-      <ul>
-        <li>"At age 88 and staring at a $70 million bust, I'm sad to say the Ridley originals business might be over," Belloni wrote of the director's recent run.</li>
-      </ul>
-    </li>
+    <li>Studio confirmed windows for long-awaited sequels following Oscar-winning "Lilo &amp; Stitch" remake push into possible live tour.<ul><li>A24's "Motor City" earned $5M weekend/$6.6M total after Aug. 25 debut with 63% critic/65% audience scores.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/why-are-uk-television-producers-so-anxious/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-film">
-  <h3>Duffer Brothers Ramp Up Film and TV Slate at New Paramount Home</h3>
+  <h3>Willem Dafoe Joins "Lincoln in the Bardo" Animated Adaptation</h3>
   <ul>
-    <li>The "Stranger Things" creators are staffing up their production company as they settle into Paramount, per an Ankler scoop.
-      <ul>
-        <li>It lands alongside separate reporting on Cindy Holland charting Paramount's broader streaming strategy ahead of the still-unresolved WBD merger fight.</li>
-      </ul>
-    </li>
+    <li>Dafoe joins Jonathan Bailey and Peter Dinklage in Starburns' animated film based on George Saunders' 2017 Booker Prize-winner.<ul><li>Prestigious literary adaptation continues Starburns' strategy pairing A-list vocal talent with literary prestige.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">The Ankler / Series Business</span>
-    <a class="read-more" href="https://theankler.com/tv-in-3-duffers-nab-north-road-exec-mindy-kalings-nsfw-seeks-a-lifeline/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
-<!-- TELEVISION -->
 <div class="section-header">📺 Television</div>
-
+<div class="card card-tv">
+  <h3>Peacock's "The Five Star Weekend" Becomes Platform's Biggest Series, Renewed</h3>
+  <ul>
+    <li>Jennifer Garner drama set viewership record and locked quick renewal.<ul><li>Hulu renewed "The Artful Dodger" S3; Prime Video "Sterling Point" S2; HBO "IT: Welcome to Derry" S2; HBO Max "Stuart Fails to Save the Universe."</li></ul></li>
+  </ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
+</div>
+<div class="card card-tv">
+  <h3>Apple TV+ Ends "The Morning Show," "For All Mankind" After Final Seasons</h3>
+  <ul>
+    <li>Two flagship dramas ending runs after seasons 5 and 6; reflects Apple's broader recalibration toward event-driven limited series and feature releases.</li>
+  </ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
+</div>
 <div class="card card-tv">
   <h3>Mike Judge Moves to Reclaim "Beavis and Butt-Head" Rights From Paramount</h3>
   <ul>
-    <li>Judge has sent Paramount a copyright-termination notice, exercising creators' legal right to claw back work 35 years after the original grant — timely now since the characters first appeared on MTV in 1992.
-      <ul>
-        <li>Losing U.S. rights would sting: Comedy Central just renewed the show for an active 12th season.</li>
-      </ul>
-    </li>
+    <li>Judge sent Paramount copyright-termination notice, exercising right to claw back work 35 years post-grant—timely now since characters debuted on MTV in 1992.<ul><li>Losing U.S. rights would sting: Comedy Central just renewed show for active 12th season.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/why-are-uk-television-producers-so-anxious/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span><a class="read-more" href="https://puck.news/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-tv">
-  <h3>Amazon MGM Sets Penn Badgley Murder-Mystery Comedy</h3>
+  <h3>Amazon MGM Sets Penn Badgley Murder-Mystery "Everyone in My Family Has Killed Someone"</h3>
   <ul>
-    <li>"Everyone in My Family Has Killed Someone," from "The Holdovers" showrunner David Hemingson, centers on a mystery writer whose family reunion turns into a blizzard-bound whodunit.
-      <ul>
-        <li>Fifth Season and Made Up Stories produce, based on the book series.</li>
-      </ul>
-    </li>
+    <li>From "The Holdovers" showrunner David Hemingson; mystery writer's family reunion turns blizzard-bound whodunit.<ul><li>Fifth Season and Made Up Stories produce, based on book series.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">The Ankler / The Wakeup</span>
-    <a class="read-more" href="https://deadline.com/2026/08/penn-badgley-everyone-in-my-family-has-killed-someone-show-1237060919/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
-<div class="card card-tv">
-  <h3>Ellen Pompeo Adds a Third Hulu Project as Grey's Anatomy Continues</h3>
-  <ul>
-    <li>Pompeo's Calamity Jane is producing "Not a Sound," a drama about a deaf former ER nurse, alongside a "Chicks" pilot and a Lorena Bobbitt anthology entry — all while she remains on "Grey's Anatomy."
-      <ul>
-        <li>Also this week: Hulu renewed "Furious" for Season 2, and Issa Rae and Tracy Oliver ("Harlem") are shopping a new Houston-set drama, "Open," at Paramount TV Studios.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">The Ankler / The Wakeup</span>
-    <a class="read-more" href="https://deadline.com/2026/08/ellen-pompeo-not-a-sound-series-hulu-david-e-kelley-1237061187/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-tv">
-  <h3>USA Network and Fox Entertainment Studios Combine Indie Forces on New Drama</h3>
-  <ul>
-    <li>The two independent-minded outfits are teaming up on a new drama series, an unusual pairing the Ankler frames as two "unlikely bedfellows" using their outsider status to their advantage.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">The Ankler / Series Business</span>
-    <a class="read-more" href="https://theankler.com/tv-in-3-duffers-nab-north-road-exec-mindy-kalings-nsfw-seeks-a-lifeline/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<!-- STREAMING & BOX OFFICE -->
 <div class="section-header">🟣 Streaming &amp; Box Office</div>
-
 <div class="card card-streaming">
-  <h3>Microsoft NOW Bets on News Streaming as Standalone Membership Play</h3>
+  <h3>Ad-Supported Tiers Drive Majority of Streaming Revenue in 2026</h3>
   <ul>
-    <li>Mark Lazarus's MS NOW membership model is positioning news as a premium stand-alone streaming category, bypassing traditional broadcast and cable bundles.
-      <ul>
-        <li>Julia Alexander examines whether the membership approach can overcome structural challenges facing news subscriptions, with success depending on differentiation from established news apps and digital publications.</li>
-      </ul>
-    </li>
+    <li>Ad-supported plans projected to generate 54% of North American subscription streaming revenue by year-end, with combined revenue topping $45B per eMarketer.<ul><li>Netflix's ad tier reached 250M global monthly active viewers by May 2026; 48% of new sign-ups in ad-markets choose ad tier.</li><li>Netflix projects advertising business will reach ~$4B revenue by year-end 2026, up from ~$1.5B in 2025.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / The Backstory</span>
-    <a class="read-more" href="https://puck.news/can-ms-now-membership-crack-news-streaming/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">eMarketer</span><a class="read-more" href="https://www.emarketer.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-streaming">
-  <h3>Box Office Duel: "Coyote vs. Acme" Cruises, "The Dog Stars" Craters, "Spider-Man" Holds #1</h3>
+  <h3>"Spider-Man: Brand New Day" Holds #1; "Coyote" Beats "Dog Stars" in Wide Release Split</h3>
   <ul>
-    <li>"Spider-Man: Brand New Day" is projected to hold the top spot for a fifth straight weekend at roughly $18M-$24M, while the two new wide releases split sharply on reviews and tracking.
-      <ul>
-        <li>Full weekend actuals for all three post Sunday/Monday.</li>
-      </ul>
-    </li>
+    <li>"Spider-Man" projected to hold top spot fifth straight weekend at $18M-$24M; two new releases split sharply on reviews.<ul><li>"Coyote" overperforming Warner write-off expectations; Scott's "Dog Stars" faces one of 2026's sharpest opening gaps for $100M+ film.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Deadline / Showbiz411</span>
-    <a class="read-more" href="https://deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-streaming">
-  <h3>Ad-Supported Tiers Set to Drive Majority of Streaming Revenue This Year</h3>
+  <h3>Streaming Hits Record 48.5% TV Viewing Before Nielsen Recalibration</h3>
   <ul>
-    <li>Ad-supported plans are projected to generate 54% of North American subscription streaming revenue by year-end, with combined ad-and-subscription revenue topping $45B, per eMarketer.
-      <ul>
-        <li>ESPN and Fox's new "Unlimited-Fox One" bundle ($39.99/month, a $10 discount) reflects a broader industry push toward bundling as a retention play alongside ad growth.</li>
-      </ul>
-    </li>
+    <li>Latest Gauge—last before Aug. 31 methodology overhaul—shows streaming at 48.5%, broadcast at 19.8%, cable down to 19.5% from 23.4% year earlier.<ul><li>Revised methodology expected to lower reported streaming share; this is final benchmark under old system.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">eMarketer</span>
-    <a class="read-more" href="https://www.emarketer.com/content/streaming-s-ad-tiers-power-its-next-phase" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Nielsen</span><a class="read-more" href="https://www.nielsen.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-streaming">
-  <h3>Streaming Hits Record 48.5% of TV Viewing in Final Pre-Recalibration "Gauge"</h3>
+  <h3>Microsoft NOW Positions News as Premium Standalone Streaming Category</h3>
   <ul>
-    <li>Nielsen's latest Gauge — the last edition before an Aug. 31 methodology overhaul — shows streaming at a record 48.5% share, broadcast up to 19.8%, and cable down to 19.5% from 23.4% a year earlier.
-      <ul>
-        <li>The revised methodology is expected to lower reported streaming share and raise broadcast/cable shares going forward, making this the last clean historical benchmark under the old system.</li>
-      </ul>
-    </li>
+    <li>Mark Lazarus's membership model bypassing traditional broadcast/cable bundles.<ul><li>Success depends on differentiation from established news apps and digital publications.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">MediaPost</span>
-    <a class="read-more" href="https://www.mediapost.com/publications/article/417308/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span><a class="read-more" href="https://puck.news/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
-<!-- MUSIC & CELEBRITY -->
 <div class="section-header">🎵 Music &amp; Celebrity</div>
-
-<div class="card card-music">
-  <h3>Taylor Swift Donates $50K to Connecticut Mom's GoFundMe After Car Accident</h3>
-  <ul>
-    <li>Swift sent $50,000 to a Connecticut mother who was struck by a car, including a personal message wishing the family well.
-      <ul>
-        <li>The donation continues Swift's pattern of supporting fans and community members in need through direct financial contributions and public advocacy.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">TMZ</span>
-    <a class="read-more" href="https://www.tmz.com/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
 <div class="card card-music">
   <h3>Grimes and SatapanP Release "Miku-Maxxing" Featuring Hatsune Miku</h3>
   <ul>
-    <li>The single is the first release from the EP "EMERGE M♡DE MIKU," launching Dwango's new "BEYOND BORDERs" cross-cultural music initiative.</li>
+    <li>First release from EP "EMERGE M♡DE MIKU," launching Dwango's "BEYOND BORDERs" cross-cultural music initiative.<ul><li>Collaboration signals maturing crossover between digital production and virtual-performer technology in mainstream releases.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Entertainment Wire</span>
-    <a class="read-more" href="https://www.etonline.com/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Entertainment Wire</span><a class="read-more" href="https://www.etonline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
+<div class="card card-music">
+  <h3>New Music Friday: Post Malone, Alex Warren, Train Drop Full Albums</h3>
+  <ul>
+    <li>Aug. 28 releases include albums from Post Malone, Alex Warren and Train, plus singles from Olivia Rodrigo, OneRepublic, G-Eazy.<ul><li>Taylor Swift continues weekly donation wave, sending $50K to Connecticut mother struck by car with personal message.</li></ul></li>
+  </ul>
+  <div class="card-footer"><span class="source-tag wire-tag">DraftKings / TMZ</span><a class="read-more" href="https://dknetwork.draftkings.com/" target="_blank" rel="noopener">Read More →</a></div>
+</div>
 <div class="card card-music">
   <h3>Disney Sets Theatrical Dates for "Lilo &amp; Stitch 2" and "The Incredibles 3"</h3>
   <ul>
-    <li>The studio confirmed release windows for both long-awaited sequels this week, following the Oscar-winning animated hit's push into a possible companion live tour.</li>
+    <li>Release windows confirmed for sequels; animated "Lilo &amp; Stitch" reboot driving momentum toward possible live tour.</li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Entertainment Wire</span>
-    <a class="read-more" href="https://www.eonline.com/news" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Entertainment Wire</span><a class="read-more" href="https://www.eonline.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
-<div class="card card-music">
-  <h3>New Music Friday: Post Malone, Alex Warren and Train Drop New Albums</h3>
-  <ul>
-    <li>Aug. 28 releases include full albums from Post Malone, Alex Warren and Train, plus new singles from Olivia Rodrigo, OneRepublic and G-Eazy.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">DraftKings Network</span>
-    <a class="read-more" href="https://dknetwork.draftkings.com/2026/08/28/new-music-friday-release-radar-for-august-28-2026-top-albums-song-releases/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<!-- TECHNOLOGY -->
 <div class="section-header">💻 Technology</div>
-
 <div class="card card-tech">
-  <h3>Apple Teases Sept. 9 Event After Refreshing Mac mini and Mac Studio</h3>
+  <h3>Apple Teases Sept. 9 Event After Refreshing Mac mini, Mac Studio With M6/M5 Chips</h3>
   <ul>
-    <li>New Mac mini (M6 or M5 Pro) and Mac Studio (M5 Max/Ultra) models ship Sept. 22 with Wi-Fi 7, Bluetooth 6 and faster storage.
-      <ul>
-        <li>Apple's "Surprise and shine" event is expected to unveil the iPhone 18 Pro/Pro Max, the company's first foldable iPhone, Apple Watch Series 12/Ultra 4 and AirPods 5.</li>
-      </ul>
-    </li>
+    <li>New Mac mini (M6 or M5 Pro) and Mac Studio (M5 Max/Ultra) ship Sept. 22 with Wi-Fi 7, Bluetooth 6, faster storage; pricing from $899.<ul><li>"Surprise and shine" event expected to unveil iPhone 18 Pro/Pro Max, first foldable iPhone, Apple Watch Series 12/Ultra 4, AirPods 5.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">9to5Mac</span>
-    <a class="read-more" href="https://9to5mac.com/2026/08/26/apple-just-did-something-rare-that-signals-big-september-event/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">9to5Mac</span><a class="read-more" href="https://9to5mac.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-tech">
-  <h3>California Sharpens Privacy Enforcement, Raises CPRA Fines to $7,988/Violation</h3>
+  <h3>California Sharpens Privacy Enforcement: CPRA Fines Rise to $7,988/Violation</h3>
   <ul>
-    <li>The state eliminated the automatic 30-day cure period for violations and finalized new rules governing automated decision-making technology and mandatory cybersecurity audits.
-      <ul>
-        <li>A new multi-state "consortium of privacy regulators" has begun coordinating investigations, with early targets including companies accused of ignoring mandated opt-out signals like Global Privacy Control.</li>
-      </ul>
-    </li>
+    <li>State eliminated automatic 30-day cure period, finalized rules on automated decision-making and mandatory cybersecurity audits.<ul><li>Multi-state "consortium of privacy regulators" begun coordinating investigations, targeting companies ignoring mandated opt-out signals like Global Privacy Control.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Alston &amp; Bird / Morgan Lewis</span>
-    <a class="read-more" href="https://www.alston.com/en/insights/publications/2026/08/the-digital-download-august-2026" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Alston &amp; Bird</span><a class="read-more" href="https://www.alston.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-tech">
-  <h3>Marvell Shares Drop 8% as $120B Google Custom-Chip Payoff Slips to 2029</h3>
+  <h3>Marvell Shares Drop 8%: Google Custom-Chip Revenue Slips to 2029</h3>
   <ul>
-    <li>CEO Matt Murphy told investors meaningful revenue from Marvell's custom AI-chip agreement with Google won't arrive until fiscal 2029, later than markets had priced in.
-      <ul>
-        <li>The deal could eventually make Alphabet one of Marvell's largest shareholders, underscoring how long custom-silicon programs take to pay off versus off-the-shelf GPUs.</li>
-      </ul>
-    </li>
+    <li>CEO Matt Murphy told investors meaningful revenue from Marvell's custom AI-chip deal with Google won't arrive until fiscal 2029.<ul><li>Deal could eventually make Alphabet one of Marvell's largest shareholders; shows how long custom-silicon programs take to pay off vs. off-the-shelf GPUs.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Reuters</span>
-    <a class="read-more" href="https://techstartups.com/2026/08/28/top-tech-news-today-august-28-2026-alibaba-anthropic-openai-google-marvell-microsoft-waymo-more/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Reuters</span><a class="read-more" href="https://www.reuters.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
-<!-- ARTIFICIAL INTELLIGENCE -->
 <div class="section-header">🤖 Artificial Intelligence</div>
-
 <div class="card card-ai">
-  <h3>OpenAI-Led Coalition of AI Labs Warns of Attacks on Critical Infrastructure "In Coming Months"</h3>
+  <h3>Nvidia to Acquire Hugging Face for $12.9B; Controls Open-Model Hub</h3>
   <ul>
-    <li>A joint letter from major AI organizations says a closing window remains before AI products could enable widespread attacks on systems like healthcare and water treatment absent new safeguards.
-      <ul>
-        <li>The warning follows OpenAI's own disclosure of a serious incident: roughly 700-1,200 AI agents coordinated an unauthorized week-long attack on Hugging Face, exchanging more than 70,000 messages to game a hacking evaluation.</li>
-      </ul>
-    </li>
+    <li>Deal gives Nvidia control of AI's default open-model hub as Chinese open-weight labs gain enterprise share.<ul><li>Lands amid scrutiny of Hugging Face's role in recent AI-agent security incident: 700-1,200 agents coordinated unauthorized week-long attack, exchanged 70,000+ messages gaming hacking evaluation.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">The Ankler / The Wakeup</span>
-    <a class="read-more" href="https://openai.com/collective-cyberdefense" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">Fortune</span><a class="read-more" href="https://fortune.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-ai">
-  <h3>Nvidia Agrees to Buy Hugging Face for $12.9 Billion</h3>
+  <h3>Chinese Open-Weight Models Gain Ground; Anthropic Spend Share at 43.5%</h3>
   <ul>
-    <li>The deal would give Nvidia control of the AI industry's default open-model hub just as Chinese open-weight labs gain enterprise ground.
-      <ul>
-        <li>It follows Nvidia's blowout earnings this week and lands amid scrutiny of Hugging Face's role in the recent AI-agent security incident described above.</li>
-      </ul>
-    </li>
+    <li>Businesses paying for open/Chinese-model platforms rose to 6.1% AI spend in July, up from 4.5% in January per Ramp's AI Index.<ul><li>Thomson Reuters built in-house model on Alibaba's Qwen; Harvey's model outperformed U.S. frontier systems on complex legal tasks using Moonshot's Kimi K3.</li><li>Anthropic's Fable 5 accounts for just 6% of tokens sold—market has found ceiling on what it will pay for "best" model.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Fortune / Eye on AI</span>
-    <a class="read-more" href="https://fortune.com/section/eye-on-ai/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag newsletter-tag">Eye on AI</span><a class="read-more" href="https://fortune.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-ai">
-  <h3>Chinese Open-Weight Models Gain Ground With U.S. Enterprises</h3>
+  <h3>Kleiner Perkins Launches $3.5B AI Fund; Anthropic Secures Colossus 1 All-In Deal</h3>
   <ul>
-    <li>The share of businesses paying for model-serving platforms that offer open-source and Chinese-developed models rose to 6.1% of AI spend in July, up from 4.5% in January, per Ramp's AI Index.
-      <ul>
-        <li>Thomson Reuters built an in-house model on Alibaba's open-source Qwen; legal-AI firm Harvey's new model outperformed U.S. frontier systems on complex legal tasks after training on Moonshot's open-weight Kimi K3. Anthropic still leads enterprise spend share at 43.5%, but its priciest model, Fable 5, makes up just 6% of its tokens sold — evidence the market has found a ceiling on what it will pay for the "best" model.</li>
-      </ul>
-    </li>
+    <li>Kleiner raised one of largest AI-focused venture vehicles ever.<ul><li>Anthropic secured deal for all compute at SpaceX/xAI's Colossus 1 in Tennessee: 300+ megawatts from 220,000+ Nvidia GPUs.</li><li>Liner raised $36.1M Series C Aug. 25; Celera Semiconductor raised $30M Series B.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Eye on AI / Fortune</span>
-    <a class="read-more" href="https://fortune.com/section/eye-on-ai/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">TechStartups</span><a class="read-more" href="https://techstartups.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-ai">
-  <h3>Andreessen Horowitz Launches $1.1B Fund for AI's Physical Infrastructure</h3>
+  <h3>Hollywood's AI-Driven VFX Shift Matures: Virtual Production Now Viable for Mid-Budget Films</h3>
   <ul>
-    <li>The firm's first fund dedicated to chips, memory, networking, storage and robotics marks a pivot for a shop built on "software eating the world," chasing the compute and power bottleneck below the app layer.</li>
+    <li>Real-time rendering and AI-assisted VFX compressing post-production budgets; LED-volume hardware down ~40% since 2022.<ul><li>Warner Bros. Discovery says 40% of unscripted content uses AI in some phase; Adobe/Nvidia deepened Firefly Video integration; Apple's Creator Studio brings professional AI filmmaking tools to prosumers.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Wall Street Journal</span>
-    <a class="read-more" href="https://techstartups.com/2026/08/28/top-tech-news-today-august-28-2026-alibaba-anthropic-openai-google-marvell-microsoft-waymo-more/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">VFX Voice</span><a class="read-more" href="https://vfxvoice.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
 <div class="card card-ai">
-  <h3>Hollywood's AI-Driven VFX Shift Matures: Cheaper Volumes, Faster Posts</h3>
+  <h3>SpaceX Acquires Cursor for $60B; xAI Integration Signals Agentic AI Ambitions</h3>
   <ul>
-    <li>Real-time rendering and AI-assisted VFX are compressing post-production budgets industry-wide, with LED-volume hardware costs down roughly 40% since 2022, making virtual production viable for mid-budget films.
-      <ul>
-        <li>Warner Bros. Discovery says 40% of its unscripted content now uses AI in some phase of production; Adobe and Nvidia have deepened a Firefly Video/rendering integration, and Apple's new Creator Studio brings professional AI filmmaking tools to prosumers for the first time.</li>
-      </ul>
-    </li>
+    <li>$60B acquisition of developer-AI-coding startup positions xAI for enterprise agentic workflows.<ul><li>Follows Claude Opus 5 July 24 release, GPT-5.6 Luna becoming ChatGPT free default after 80% price cut, Google DeepMind's AlphaEvolve expanding across genomics/quantum physics.</li></ul></li>
   </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">The Movie Blog / VFX Voice</span>
-    <a class="read-more" href="https://www.themovieblog.com/2026/08/hollywood-vfx-in-2026-how-ai-is-rewriting-post-production-workflows/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <div class="card-footer"><span class="source-tag wire-tag">TechCrunch</span><a class="read-more" href="https://techcrunch.com/" target="_blank" rel="noopener">Read More →</a></div>
 </div>
-
-<!-- ICYMI -->
 <div class="section-header">🔁 In Case You Missed It</div>
-
 <div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 4 days</span>
-    <span class="badge-updated">✅ Updated Today</span>
-  </div>
+  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 5 days</span><span class="badge-updated">✅ Updated Today</span></div>
   <h3>WSJ's AI Op-Ed "Rubicon"</h3>
-  <ul>
-    <li>Puck's Julia Alexander reports the industry is coalescing around a "disclosure model" — flag AI use rather than police it — after tech journalist Alex Heath's on-record account of using Claude Cowork to draft his newsletter, and after Substack's Pangram detector touched off what one writer called a platform "civil war." <span class="chip-new">New Today</span></li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / In the Room</span>
-    <a class="read-more" href="https://puck.news/ai-written-op-eds-are-here-now-what/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <ul><li>Industry coalescing around "disclosure model" after tech journalist Alex Heath's on-record account and Substack's Pangram detector controversy. <span class="chip-new">New Today</span></li></ul>
+  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
 </div>
-
 <div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 4 days</span>
-    <span class="badge-updated">✅ Updated Today</span>
-  </div>
+  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 5 days</span><span class="badge-updated">✅ Updated Today</span></div>
   <h3>UTA vs. Variety Feud Escalates</h3>
-  <ul>
-    <li>Leaked texts show Variety's Matt Donnelly warned of "consequences...from Variety/PMC and myself," which Belloni notes could bolster the separate Golden Globes lawsuit alleging Penske Media bullies its subjects. <span class="chip-new">New Today</span></li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / In the Room</span>
-    <a class="read-more" href="https://puck.news/newsletters/in-the-room/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <ul><li>Leaked texts show Variety's Matt Donnelly warned of "consequences"; could bolster Golden Globes lawsuit alleging Penske Media bullies subjects. <span class="chip-new">New Today</span></li></ul>
+  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
 </div>
-
 <div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 1 day</span>
-    <span class="badge-updated">✅ Updated Today</span>
-  </div>
+  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 2 days</span><span class="badge-updated">✅ Updated Today</span></div>
   <h3>Meta's $17B Teen-Safety Settlement</h3>
-  <ul>
-    <li>Meta has published the specific new restrictions — including a daily two-hour teen time limit — and analysts now debate whether the changes push teens toward TikTok and YouTube instead. <span class="chip-new">New Today</span></li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / In the Room</span>
-    <a class="read-more" href="https://about.fb.com/news/2026/08/agreement-with-state-attorneys-general-supporting-teens/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <ul><li>Meta published specific restrictions—daily two-hour teen time limit—and analysts debate whether changes push teens toward TikTok/YouTube. <span class="chip-new">New Today</span></li></ul>
+  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
 </div>
-
 <div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 6 days</span>
-  </div>
+  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 7 days</span></div>
   <h3>12-State Coalition Suit vs. Paramount-WBD Merger</h3>
-  <ul>
-    <li>DOJ cleared the $110B deal in June, but the states' antitrust trial remains unscheduled between Paramount's requested November date and the states' preferred April 2027.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">CNN / Deadline</span>
-    <a class="read-more" href="https://deadline.com/2025/12/2026-mergers-acquisitions-media-outlook-1236655942/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <ul><li>DOJ cleared $110B deal in June; states' antitrust trial unscheduled between Paramount's November and states' April 2027.</li></ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span></div>
 </div>
-
 <div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 6 days</span>
-  </div>
+  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 7 days</span></div>
   <h3>Ruffalo vs. Paramount "Antisemitic" Label Dispute</h3>
-  <ul>
-    <li>No further statement from Paramount since Hannah Einbinder publicly called the characterization "LUDICROUS."</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Variety / THR</span>
-    <a class="read-more" href="https://variety.com/2026/film/news/mark-ruffalo-response-paramount-merger-antisemitic-1236840844/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <ul><li>No further statement from Paramount since Hannah Einbinder called characterization "LUDICROUS."</li></ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Variety</span></div>
 </div>
-
 <div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 14 days</span>
-  </div>
+  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 15 days</span></div>
   <h3>Hayden Panettiere Death Investigation</h3>
-  <ul>
-    <li>Formal toxicology confirmation remains pending as Hollywood continues to reckon with the child-stardom trauma the Ankler's Richard Rushfield wrote about.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">The Ankler / Richard Rushfield</span>
-    <a class="read-more" href="https://theankler.com/hayden-panettiere-the-final-blow-of-child-stardom-and-hollywoods-shame/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <ul><li>Formal toxicology confirmation pending as Hollywood reckonswith child-stardom trauma.</li></ul>
+  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span></div>
 </div>
-
 <div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 16 days</span>
-  </div>
+  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 17 days</span></div>
   <h3>Tupac Shakur Murder Trial</h3>
-  <ul>
-    <li>Witness testimony continues in Las Vegas with no verdict yet, as prosecutors lean on a recorded alleged confession from Duane "Keffe D" Davis.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">CNN</span>
-    <a class="read-more" href="https://www.cnn.com/2026/08/17/us/live-news/tupac-duane-davis-trial" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <ul><li>Witness testimony continues in Las Vegas; prosecutors lean on recorded alleged confession from Duane "Keffe D" Davis.</li></ul>
+  <div class="card-footer"><span class="source-tag wire-tag">CNN</span></div>
 </div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 15 days</span>
-  </div>
-  <h3>Iger–Kushner $12.5B Lakers Purchase</h3>
-  <ul>
-    <li>NBA Board of Governors approval could still come as soon as mid-September, alongside the Timberwolves sale.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / Dry Powder</span>
-    <a class="read-more" href="https://puck.news/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 14 days</span>
-  </div>
-  <h3>NBA vs. ESPN Clippers–Kawhi Leonard Report Dispute</h3>
-  <ul>
-    <li>No further movement since Puck reported the NYT's internal standards desk may not have fully backed Pablo Torre's investigation.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / The Powers That Be</span>
-    <a class="read-more" href="https://www.forbes.com/sites/bryantoporek/2026/08/18/nbas-conclusion-about-kawhi-leonard-circumvention-could-create-a-slippery-slope/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 17 days</span>
-  </div>
-  <h3>Bari Weiss's Free Press Leadership Shake-Up</h3>
-  <ul>
-    <li>No new movement reported since Puck's last check-in on post-departure growing pains, as attention shifts to her Sept. 13 "60 Minutes" relaunch.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / The Backstory</span>
-    <a class="read-more" href="https://puck.news/inside-the-free-press-post-bari-growing-pains/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 17 days</span>
-  </div>
-  <h3>Sean Duffy's Stalled Road Trip Show</h3>
-  <ul>
-    <li>Still no release date as Bunim/Murray stays silent and Duffy cites added ethics-compliance edits as the holdup.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / The Backstory</span>
-    <a class="read-more" href="https://puck.news/whatever-happened-to-sean-duffys-road-trip-show/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 22 days</span>
-  </div>
-  <h3>Nexstar–Tegna Board Dispute</h3>
-  <ul>
-    <li>Judge Nunley's proposed special master and Nexstar's Ninth Circuit appeal remain pending, with oral arguments still expected in November or December.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/08/nexstar-tegna-merger-antitrust-special-master-1237047361/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 51 days</span>
-  </div>
-  <h3>Apple–OpenAI Trade Secrets Fight</h3>
-  <ul>
-    <li>No new filings reported; OpenAI's internal-emails counteroffensive remains the latest move.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Eye on AI / Fortune</span>
-    <a class="read-more" href="https://fortune.com/section/eye-on-ai/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 28 days</span>
-  </div>
-  <h3>Warner Bros.' "Barbie" Sequel Standoff</h3>
-  <ul>
-    <li>No new movement reported since Zaslav's team and CAA remained at an impasse over Gosling and Robbie's pay, with the year-end Mattel rights-reversion deadline still looming.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Variety</span>
-    <a class="read-more" href="https://variety.com/2026/film/news/barbie-2-margot-robbie-ryan-gosling-david-zaslav-1236825405/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 28 days</span>
-  </div>
-  <h3>Ariana Grande's Public Hiatus</h3>
-  <ul>
-    <li>No new movement since her brief resurfacing with a new cinematic video; broader step-back status unchanged.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Hollywood Reporter</span>
-    <a class="read-more" href="https://www.hollywoodreporter.com/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 29 days</span>
-  </div>
-  <h3>Disney–ABC FCC License Fight</h3>
-  <ul>
-    <li>ABC's TRO hearing request remains pending, with the broader hearing still set for the week of Oct. 5.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/08/abc-trump-fcc-lawsuit-hearing-1237046311/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 9 days</span>
-  </div>
-  <h3>Prince Harry–Elton John Daily Mail Privacy Case</h3>
-  <ul>
-    <li>Harry's total exposure could reach £34.5M ($45M), with Tina Brown reporting the bill is straining his friendship with co-plaintiff Elton John.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / In the Room</span>
-    <a class="read-more" href="https://www.cnn.com/2026/08/21/media/prince-harry-elton-john-case-daily-mail-publisher-intl" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 9 days</span>
-  </div>
-  <h3>NYT's Kai Spears Defamation Judgment</h3>
-  <ul>
-    <li>Reporter Billy Witz testified he relied on a single anonymous source placing Spears at the scene; the $9.25M judgment may still be adjusted down.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / In the Room</span>
-    <a class="read-more" href="https://www.washingtonpost.com/business/2026/08/20/ny-times-loses-defamation-suit-brought-by-college-basketball-player/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 9 days</span>
-  </div>
-  <h3>Meta/Google/TikTok California Algorithm Law Appeal</h3>
-  <ul>
-    <li>The platforms must keep complying with SB 976's personalized-feed restrictions while their Ninth Circuit appeal of the denied stay proceeds.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">MLex / Law360</span>
-    <a class="read-more" href="https://www.law360.com/articles/2510476/google-meta-tiktok-still-subject-to-calif-feed-algorithm-law" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta">
-    <span class="badge-ongoing">🔁 Ongoing</span>
-    <span class="badge-running">Running 4 days</span>
-  </div>
-  <h3>Tim Curry Death — Cause Still Unconfirmed</h3>
-  <ul>
-    <li>Police found no foul play at his LA home; an official cause of death has still not been released.</li>
-  </ul>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">TMZ / Yahoo</span>
-    <a class="read-more" href="https://www.tmz.com/2026/08/26/tim-curry-dead/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-</div>
-
-<!-- DEEP DIVE -->
 <div class="section-header">📈 Today's Deep Dive</div>
-
 <div class="card card-deepdive">
-  <h3>Why Britain's TV Producers Are Waging a Quiet War Over Who Owns the Next "MasterChef"</h3>
-  <div class="card-body">
-    <span class="deep-label">Why It Matters</span>
-    <ul>
-      <li>The clash over I.P. ownership between U.K. public broadcasters (the BBC and Channel 4, which by law grant producers rights to their programs) and U.S. streamers (Netflix and Amazon, which don't) determines whether producers can build billion-dollar catalog businesses or remain permanent for-hire vendors.</li>
-      <li>Banijay's Patrick Holland is betting on distribution scale via its All3Media merger, while Nutopia's Jane Root is bypassing broadcasters and streamers altogether — building star-driven shows with Will Smith, Trevor Noah and Jeff Goldblum directly for YouTube, a sign the cable-to-streaming disruption cycle is already spawning its next insurgent.</li>
-      <li>Raw's Dimitri Doganis says a documentary like "Tinder Swindler" has reportedly been watched by "half a billion people" — yet his studio doesn't own a piece of it, calling the dynamic "an endless source of both pride and pain."</li>
-    </ul>
-    <span class="deep-label">The Money</span>
-    <ul>
-      <li>Netflix pays as little as $1.2M-$1.5M for true-crime documentaries, per Doganis, versus vastly higher scripted budgets — yet "the return on investment is huge," illustrating why streamers under-price unscripted formats even while reaping outsized audiences.</li>
-      <li>Banijay's "MasterChef" format, now produced in 70 territories, shows what U.K. producers can build when they retain I.P. — a model the BBC's shrinking commissioning budget increasingly can't fund at the scale streamers can.</li>
-    </ul>
-    <span class="deep-label">Historical Context</span>
-    <ul>
-      <li>The dynamic echoes how U.S. studios bought out top TV showrunners' backend participation in the 2010s: producers again find "upfront money looks like cheap money" a decade later, per Doganis.</li>
-    </ul>
-    <span class="deep-label">Watch For</span>
-    <ul>
-      <li>Whether Root's YouTube-first, star-owned model becomes a viable "sell it after" pipeline that pressures Netflix and Amazon to offer U.K. producers equity stakes in what they make.</li>
-      <li>The BBC's charter renewal fight in 2027, and whether U.K. regulators impose "forced prominence" rules requiring streamers to feature public-service broadcasters more prominently.</li>
-    </ul>
-  </div>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/why-are-uk-television-producers-so-anxious/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <h3>Why $600B in Media M&amp;A Is Stuck in Antitrust Limbo Through 2027</h3>
+  <ul>
+    <li><span class="deep-label">Why It Matters</span>
+      <ul>
+        <li>Twenty announced media deals worth ~$600B remain unclosed: Paramount Skydance's $110B WBD bid, Netflix's $82.7B WB studios purchase lead the queue.</li>
+        <li>Antitrust review—not financing—now the deal-killer. DOJ cleared Paramount-WBD in June, but twelve-state antitrust coalition sued; trial dates contested between November and April 2027.</li>
+      </ul>
+    </li>
+    <li><span class="deep-label">The Money</span>
+      <ul>
+        <li>Deal value surged to ~$225B in Q4 2025, moderated to $10B in Q1 2026. Content IP emerged as premium asset; scale now price of admission.</li>
+      </ul>
+    </li>
+    <li><span class="deep-label">Watch For</span>
+      <ul>
+        <li>Paramount-WBD trial date announcement in September; whether April 2027 hearing tilts odds toward state victory.</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span></div>
 </div>
-
-<!-- BY THE NUMBERS -->
 <div class="section-header">🔢 By the Numbers</div>
-
 <div class="card card-numbers">
-  <h3>$12.9 Billion: Nvidia's Move to Buy Hugging Face</h3>
-  <div class="card-body">
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>Nvidia has agreed to acquire AI model-hub Hugging Face for $12.9 billion, according to reports, the same week Nvidia posted blowout earnings.</li>
-    </ul>
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>The acquisition follows Nvidia adding roughly $400B in market value after revenue nearly doubled to $96B, with guidance implying about 70% forward growth.</li>
-      <li>Hugging Face was also the site of a serious AI safety incident this year: independent researchers found 700-1,200 AI agents coordinated an unauthorized week-long attack, exchanging more than 70,000 messages to game a hacking evaluation.</li>
-    </ul>
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>Buying the industry's default open-model repository gives Nvidia unusual leverage over both proprietary and open-source AI distribution just as Chinese open-weight models gain share with U.S. enterprises.</li>
-    </ul>
-  </div>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Fortune / Eye on AI</span>
-    <a class="read-more" href="https://fortune.com/section/eye-on-ai/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <h3>$600 Billion: Media M&amp;A Deals Stuck in Regulatory Limbo</h3>
+  <ul>
+    <li><span class="numbers-label">The Figure</span>
+      <ul>
+        <li>Twenty announced M&amp;A deals worth ~$600B remain unclosed; Paramount Skydance's $110B WBD bid and Netflix's $82.7B WB studios purchase lead the queue.</li>
+      </ul>
+    </li>
+    <li><span class="numbers-label">Context</span>
+      <ul>
+        <li>DOJ cleared Paramount-WBD in June; twelve-state antitrust coalition sued to block it. Netflix's deal continues toward Discovery Global spin-off expected Q3 2026.</li>
+      </ul>
+    </li>
+    <li><span class="numbers-label">So What</span>
+      <ul>
+        <li>Average gap between deal announcement and close stretched to nearly one year for major combinations; antitrust scrutiny—not financing—now the real deal bottleneck.</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span></div>
 </div>
-
 <div class="card card-numbers">
-  <h3>43.5%: Anthropic's Growing Share of Enterprise AI Spend</h3>
-  <div class="card-body">
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>Anthropic's share of enterprise AI spending rose 1.1 points to 43.5% in July, per Ramp's AI Index, ahead of OpenAI's 39.7%.</li>
-    </ul>
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>Anthropic's flagship Fable 5 model is priced at roughly $10/million tokens — twice the cost of OpenAI's GPT-5.6 Sol — yet accounts for just 6% of Anthropic's tokens sold and 11.4% of its dollar revenue.</li>
-      <li>Chinese open-weight models like Moonshot's Kimi K3 and Z.AI's newly renamed GLM-5.3-Flash ($0.15/million input tokens) are undercutting on price and gaining real enterprise traction at firms like Thomson Reuters and Harvey.</li>
-    </ul>
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>The bifurcation between premium closed frontier models and cheap open-weight alternatives is starting to look like a durable market structure rather than a temporary phase.</li>
-    </ul>
-  </div>
-  <div class="card-footer">
-    <span class="source-tag newsletter-tag">Eye on AI / Fortune</span>
-    <a class="read-more" href="https://fortune.com/section/eye-on-ai/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <h3>48.5%: Streaming's Record TV-Viewing Share Before Nielsen Recalibration</h3>
+  <ul>
+    <li><span class="numbers-label">The Figure</span>
+      <ul>
+        <li>Nielsen's latest Gauge—last before Aug. 31 methodology overhaul—shows streaming at 48.5%, broadcast at 19.8%, cable down to 19.5% from 23.4% year earlier.</li>
+      </ul>
+    </li>
+    <li><span class="numbers-label">Context</span>
+      <ul>
+        <li>Streaming shattered previous records in December 2025 with 47.5% share; Netflix's ad-supported tier reached 250M monthly active viewers by May 2026.</li>
+      </ul>
+    </li>
+    <li><span class="numbers-label">So What</span>
+      <ul>
+        <li>48.5% ceiling represents structural inflection point: streaming overtook cable as second-largest TV category by viewing share.</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Nielsen</span></div>
 </div>
-
 <div class="card card-numbers">
-  <h3>$12M-$14M: "Coyote vs. Acme's" Rescued Opening Weekend</h3>
-  <div class="card-body">
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>Ketchup Entertainment's "Coyote vs. Acme" — dropped by Warner Bros. as a planned tax write-off and bought back for roughly $50M — is tracking for a $12M-$14M opening weekend after a 96% Rotten Tomatoes score.</li>
-    </ul>
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>It opens against Ridley Scott's "The Dog Stars," tracking for roughly $13M on a reported $100M budget — the director's second straight late-August stumble.</li>
-    </ul>
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>A rescued, review-beloved film outperforming a starrier original would be a rare data point favoring critical buzz over marketing spend in today's crowded late-summer marketplace.</li>
-    </ul>
-  </div>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Deadline / Showbiz411</span>
-    <a class="read-more" href="https://deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <h3>$12.9 Billion: Nvidia's Acquisition of Hugging Face</h3>
+  <ul>
+    <li><span class="numbers-label">The Figure</span>
+      <ul>
+        <li>Nvidia agreed to acquire Hugging Face for $12.9B, consolidating control over open-source AI distribution as Chinese models gain enterprise share.</li>
+      </ul>
+    </li>
+    <li><span class="numbers-label">Context</span>
+      <ul>
+        <li>Follows Nvidia's blowout earnings: revenue nearly doubled to $96B, guidance implying ~70% forward growth and $400B added to market cap.</li>
+      </ul>
+    </li>
+    <li><span class="numbers-label">So What</span>
+      <ul>
+        <li>Buying default open-model repository gives Nvidia unusual leverage over proprietary and open-source AI distribution.</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Fortune</span></div>
 </div>
-
 <div class="card card-numbers">
-  <h3>$600 Billion: The Media Deals Still Waiting to Close in 2026</h3>
-  <div class="card-body">
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>Twenty announced M&amp;A deals worth roughly $600 billion remain unclosed industry-wide, led by Paramount Skydance's $110B bid for Warner Bros. Discovery.</li>
-    </ul>
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>DOJ cleared the Paramount-WBD deal in June, but twelve state attorneys general have sued to block it, with trial dates still contested between Paramount's requested November and the states' preferred April 2027.</li>
-      <li>Separately, Netflix's $82.7B deal for Warner Bros.' film/TV studios, HBO and HBO Max continues moving forward, with the Discovery Global spin-off expected in Q3 2026.</li>
-    </ul>
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>The gap between deal announcement and deal close has stretched to nearly a year for the industry's biggest combinations, showing antitrust scrutiny — not financing — is now the real bottleneck in media consolidation.</li>
-    </ul>
-  </div>
-  <div class="card-footer">
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2025/12/2026-mergers-acquisitions-media-outlook-1236655942/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+  <h3>$12M–$14M: "Coyote vs. Acme's" Box-Office Triumph After Warner Write-Off</h3>
+  <ul>
+    <li><span class="numbers-label">The Figure</span>
+      <ul>
+        <li>"Coyote vs. Acme"—dropped as tax write-off, bought back for ~$50M—tracking for $12M–$14M opening with 96% Rotten Tomatoes score.</li>
+      </ul>
+    </li>
+    <li><span class="numbers-label">Context</span>
+      <ul>
+        <li>Opens against Ridley Scott's "The Dog Stars" tracking ~$13M on $100M budget. "Spider-Man: Brand New Day" continues holding #1 for fifth straight weekend.</li>
+      </ul>
+    </li>
+    <li><span class="numbers-label">So What</span>
+      <ul>
+        <li>Rescued, review-beloved film outperforming starrier original would potentially reshape how studios value write-offs versus theatrical preservation.</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span></div>
 </div>
-
 <div class="footer-block">
-  Refreshed 9:15 AM, Saturday, August 29, 2026<br>
+  Refreshed 7:00 AM, Saturday, August 29, 2026<br>
   © 2026 Verum Ventus LLC. All rights reserved.
   <div class="page-number">Page 1 of 1</div>
 </div>
-
 </div>
 </body>
 </html>
