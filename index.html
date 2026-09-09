@@ -3,556 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Entertainment &amp; Tech Update — Wednesday, September 9, 2026</title>
+<title>Daily Entertainment Update – Wednesday, September 9, 2026</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f0f2f5; color: #1a1a2e; line-height: 1.6; }
-  .header { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); padding: 36px 24px 28px; text-align: center; }
-  .header h1 { font-size: clamp(22px, 4vw, 36px); color: #ffffff; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
-  .header .date { color: #b8b8d0; font-size: 15px; }
-  .badge { display: inline-block; background: linear-gradient(90deg, #e63946, #c1121f); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 14px; }
-  .container { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; }
-  .section-header { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: #6b7280; margin: 32px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #e5e7eb; }
-  .card { background: #ffffff; border-radius: 10px; border-left: 5px solid #ccc; padding: 16px 18px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
-  .card h3 { font-size: 16px; font-weight: 700; color: #111827; margin-bottom: 10px; line-height: 1.4; }
-  .card > ul { padding-left: 18px; margin: 0; }
-  .card > ul > li { font-size: 14px; color: #374151; margin-bottom: 8px; line-height: 1.5; }
-  .card ul ul { margin-top: 4px; margin-bottom: 2px; padding-left: 18px; list-style-type: circle; }
-  .card ul ul li { font-size: 13px; color: #4b5563; margin-bottom: 3px; line-height: 1.45; }
-  .card-footer { display: flex; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
-  .source-tag { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 12px; letter-spacing: 0.5px; text-transform: uppercase; }
-  .newsletter-tag { background: #fffbe6; color: #92600a; }
-  .wire-tag { background: #eef2ff; color: #3730a3; }
-  .read-more { font-size: 12px; font-weight: 600; color: #4f46e5; text-decoration: none; margin-left: auto; padding: 10px 2px; cursor: pointer; }
-  .read-more:hover { text-decoration: underline; }
-  .card-biz { border-left-color: #f4a261; }
-  .card-breaking { border-left-color: #e63946; }
-  .card-film { border-left-color: #e63946; }
-  .card-tv { border-left-color: #457b9d; }
-  .card-streaming { border-left-color: #a855f7; }
-  .card-music { border-left-color: #2a9d8f; }
-  .card-tech { border-left-color: #e9c46a; }
-  .card-ai { border-left-color: #0891b2; }
-  .card-icymi { border-left-color: #0ea5e9; }
-  .icymi-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; align-items: center; }
-  .badge-ongoing { background: #e0f2fe; color: #0369a1; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
-  .badge-updated { background: #dcfce7; color: #166534; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
-  .badge-running { background: #f1f5f9; color: #475569; font-size: 11px; padding: 2px 8px; border-radius: 12px; }
-  .chip-new { background: #fef9c3; color: #854d0e; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 8px; margin-left: 4px; vertical-align: middle; }
-  .card-deepdive { border-left-color: #6d28d9; }
-  .deep-label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #6d28d9; margin: 10px 0 3px; }
-  .deep-label:first-child { margin-top: 0; }
-  .card-numbers { border-left-color: #059669; }
-  .numbers-label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #059669; margin: 10px 0 3px; }
-  .numbers-label:first-child { margin-top: 0; }
-  .footer-block { text-align: center; color: #6b7280; font-size: 12px; margin-top: 32px; padding-top: 16px; border-top: 1px solid #e5e7eb; }
-  .page-number { text-align: right; color: #9ca3af; font-size: 11px; margin-top: 6px; }
-  @media (max-width: 600px) {
-    .header { padding: 28px 16px 22px; }
-    .card { padding: 14px 14px; }
-    .card h3 { font-size: 15px; }
-    .read-more { margin-left: 0; }
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d0d0d; color: #e8e8e8; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); padding: 48px 24px 36px; text-align: center; }
+  .header .badge { display: inline-block; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; padding: 4px 16px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #ccc; margin-bottom: 16px; }
+  .header h1 { font-size: 2.4rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .header .date { color: #aaa; font-size: 1rem; }
+  .container { max-width: 900px; margin: 0 auto; padding: 32px 16px; }
+  .section-header { font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #888; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #222; }
+  .card { background: #1a1a1a; border-radius: 10px; padding: 20px 20px 16px; margin-bottom: 14px; border-left: 4px solid #555; }
+  .card.breaking { border-left-color: #e63946; }
+  .card.film { border-left-color: #e63946; }
+  .card.tv { border-left-color: #457b9d; }
+  .card.streaming { border-left-color: #a855f7; }
+  .card.music { border-left-color: #2a9d8f; }
+  .card.tech { border-left-color: #e9c46a; }
+  .card.biz { border-left-color: #f4a261; }
+  .card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+  .source-tag { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; background: #f0f0f6; color: #555; }
+  .source-tag.newsletter { background: #fffbe6; color: #92600a; }
+  .card h3 { font-size: 1.05rem; font-weight: 700; color: #f0f0f0; margin-bottom: 6px; line-height: 1.35; }
+  .card p { font-size: 0.875rem; color: #bbb; }
+  .card a { color: #7bafd4; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .footer { text-align: center; padding: 40px 24px; color: #555; font-size: 0.78rem; border-top: 1px solid #1a1a1a; margin-top: 40px; }
+  .footer strong { color: #888; }
 </style>
 </head>
 <body>
+
 <div class="header">
   <div class="badge">Morning Edition</div>
-  <h1>🎬 Daily Entertainment &amp; Tech Update</h1>
+  <h1>Daily Entertainment Update</h1>
   <div class="date">Wednesday, September 9, 2026</div>
 </div>
+
 <div class="container">
 
-<div class="section-header">📊 Media Business</div>
+  <!-- BREAKING NEWS -->
+  <div class="section-header">🔴 Breaking News</div>
 
-<div class="card card-biz">
-  <h3>Ziffren Brittenham's Late Founding Partner Took Home Nearly $10 Million in a Single Year</h3>
-  <ul>
-    <li>A probate filing for the late Skip Brittenham, who died last year at 83, shows he personally collected roughly 14% of the L.A. boutique's partnership income in 2024.
-      <ul>
-        <li>His take put him above the reported average equity partner at nearly every Am Law 100 firm, though Ziffren's "eat what you kill" model means it reflects one rainmaker's haul, not the typical partner's.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span><a class="read-more" href="https://puck.news/newsletters/what-im-hearing/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card breaking">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span><span class="source-tag newsletter">Puck / Kim Masters</span></div>
+    <h3>Netflix Wins 'Lonesome Dove' — David Ellison Was Shut Out</h3>
+    <p>Netflix acquired rights to Larry McMurtry's entire Lonesome Dove tetralogy — four books, including two prequels and a sequel. Zoe Kazan and Jeb Stuart (East of Eden) will write and showrun. The real story: David Ellison's Paramount didn't even show up to pitch meetings with Kazan and Stuart, and when Ellison belatedly tried to jump in with an offer, Teton Ridge declined to negotiate with Paramount at all. "LONESOME DAVE. It writes itself," one exec texted Kim Masters.</p>
+  </div>
 
-<div class="card card-biz">
-  <h3>Hollywood's Chiefs Fly to France for Macron's Summit on Cinema's AI-Era Future</h3>
-  <ul>
-    <li>Netflix's Ted Sarandos, Disney's Dana Walden, Sony's Tom Rothman and Michael Barker, Paramount's Andy Gordon and CAA's Bryan Lourd joined French President Macron at the Fondation Maeght to discuss AI's threat to human-led storytelling.
-      <ul>
-        <li>George Clooney attended "just to listen" and warned in a separate interview that Hollywood is "way behind the eight ball" on AI; Canada's culture minister used the stage to blast the U.S. trade war over streamer tax revenue.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span><a class="read-more" href="https://theankler.com/inside-macrons-room-sarandos-langley-walden-and-a-big-warning/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card breaking">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>Paramount-Skydance / WBD Merger: Judge's Decision ~2 Weeks Away</h3>
+    <p>PSKY reiterated it's seeking a $1.9B bond from state AGs and the WGA — a formality before the judge's ruling, expected in roughly two weeks. The DOJ cleared the ~$110B Paramount-Skydance acquisition of Warner Bros. Discovery in June 2026, finding it unlikely to harm competition in streaming, linear TV, or film.</p>
+  </div>
 
-<div class="card card-biz">
-  <h3>Coca-Cola to Review North America Media Business Weeks After PepsiCo's Publicis Shakeup</h3>
-  <ul>
-    <li>The review follows rival PepsiCo's decision last week to shift its global media business to Publicis, intensifying pressure on incumbent agency holding companies.
-      <ul>
-        <li>Comes the same week Ad Age detailed how BarkleyOKRP's PetSmart win leaned on AI-and-integration pitches — a pattern advertisers are increasingly demanding in competitive reviews.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Ad Age</span><a class="read-more" href="https://adage.com/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card breaking">
+    <div class="card-meta"><span class="source-tag newsletter">Puck / Dylan Byers</span></div>
+    <h3>Maria Bartiromo Out at Fox</h3>
+    <p>Dylan Byers has the inside account of "Fox's Bartiromo Breakup" — the departure of the veteran anchor whose close relationship with the Trump White House defined a chapter of Fox Business and Fox News. Full story in Puck's In the Room newsletter.</p>
+  </div>
 
-<div class="card card-biz">
-  <h3>Summary Judgment Briefing Begins in the AI Industry's Biggest Copyright Fight</h3>
-  <ul>
-    <li>News outlets and book authors' consolidated case against OpenAI and Microsoft moves to summary judgment, testing whether training on pirated books is transformative fair use.
-      <ul>
-        <li>Plaintiffs cite 120+ existing AI licensing deals and $1B+ in industry payments as evidence of a functioning market OpenAI could have paid into; the DOJ's brief argues for a narrower view of "market harm."</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span><a class="read-more" href="https://puck.news/newsletters/what-im-hearing/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <!-- FILM & FESTIVALS -->
+  <div class="section-header">🎥 Film & Festivals</div>
 
-<div class="section-header">🔴 Breaking News</div>
+  <div class="card film">
+    <div class="card-meta"><span class="source-tag newsletter">THR Today</span></div>
+    <h3>Chris Hansen Objects to Robert Pattinson's 'Primetime' After Venice Premiere</h3>
+    <p>The former <em>To Catch a Predator</em> host hasn't seen the film — and has no plans to sign anything in order to — but says he's read enough about Pattinson's performance and the fictionalized depiction of his work to object. Full interview in THR's Telluride/Venice festival wrap.</p>
+  </div>
 
-<div class="card card-breaking">
-  <h3>NFL Season Opens Tonight: Reigning Champ Seattle Hosts New England in Super Bowl Rematch</h3>
-  <ul>
-    <li>The Seahawks host the Patriots at 8:20 PM ET on NBC in a rematch of February's title game, officially kicking off the 2026 season.
-      <ul>
-        <li>Hyundai debuts Scarlett Johansson as its new ad spokesperson during tonight's broadcast, replacing Jason Bateman.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">NBC / ESPN</span><a class="read-more" href="https://www.espn.com/nfl/game/_/gameId/401872656/patriots-seahawks" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card film">
+    <div class="card-meta"><span class="source-tag newsletter">THR Today</span></div>
+    <h3>John Mulaney in Talks for Warner Bros.' 'Get Smart' Reimagining</h3>
+    <p>Seth Grahame-Smith is writing the screenplay, with Charles Roven and Andrew Lazar producing; Mel Brooks attached in some capacity. Project is in early development.</p>
+  </div>
 
-<div class="card card-breaking">
-  <h3>Appeals Court Tosses Coppola's Defamation Suit Against Variety Over "Megalopolis" Coverage</h3>
-  <ul>
-    <li>The California appellate court found the article contained "non-actionable opinion" and a factual claim Coppola never proved false, reversing a trial judge who had let the case proceed.
-      <ul>
-        <li>Barring a reversal, Coppola must now cover Variety's legal fees — making his 2024 passion project even more expensive.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span><a class="read-more" href="https://puck.news/newsletters/what-im-hearing/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card film">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>Netflix Goes All-In on Theatrical — Will Report Box Office for All 6 Upcoming Films</h3>
+    <p>Netflix will report actual box office numbers for every theatrical release this year and into 2027. The slate: <strong>Cliff Booth</strong> (Nov. 25, IMAX, 27-day window); <strong>Narnia</strong> (Feb. 12, 2027, 50-day window); <strong>Charlie vs. the Chocolate Factory</strong> animated (Nov. 5, 2027, 47-day window); plus limited: La Bola Negra (Oct. 16), The Mosquito Bowl (Oct. 30), Ink (Dec. 11). The Mosquito Bowl teaser notably only lists its theatrical date. "Somewhere Scott Stuber is pointing at his phone yelling 'I told you guys!'" — McNulty.</p>
+  </div>
 
-<div class="section-header">🎥 Film &amp; Festivals</div>
+  <div class="card film">
+    <div class="card-meta"><span class="source-tag newsletter">Ankler / Prestige Junkie</span></div>
+    <h3>Andrew Garfield Played Sam Altman in 'The Uprising' — Then the Backlash Hit</h3>
+    <p>One of Telluride's buzziest entries: Garfield stars as OpenAI's CEO in <em>The Uprising</em>, portraying the employee revolt. Katey Rich and Christopher Rosen broke it down on the Prestige Junkie podcast, along with A24's Nathan Fielder documentary about Elizabeth Holmes. Rich and Rosen report from Toronto later this week. — <em>The Ankler</em></p>
+  </div>
 
-<div class="card card-film">
-  <h3>A24's "Primetime" Earns 9-Minute Venice Ovation as Robert Pattinson Plays Chris Hansen</h3>
-  <ul>
-    <li>Lance Oppenheim's dramatization of the "To Catch a Predator" host debuted to a 95% Rotten Tomatoes score, with Pattinson, Merritt Wever and Phoebe Bridgers in the cast.
-      <ul>
-        <li>The real Chris Hansen declined to attend after A24 asked him to sign an NDA, and calls Pattinson's portrayal "overly dramatic"; the film hits U.S. theaters September 25.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Deadline / Variety</span><a class="read-more" href="https://deadline.com/2026/09/primetime-robert-pattinson-venice-reaction-chris-hansen-1237067852/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card film">
+    <div class="card-meta"><span class="source-tag newsletter">Ankler Features</span></div>
+    <h3>Inside Macron's Room: Sarandos, Langley, Walden — and a Warning</h3>
+    <p>Claire Atkinson reports from the Lumière Summit in Lyon, where Netflix's Ted Sarandos, CAA's Bryan Lourd, and Disney's Dana Walden flew to France as Macron made the case that cinema is an industry worth fighting for — a case, Atkinson notes, U.S. leaders haven't been making. — <em>The Ankler Features, Sept. 8</em></p>
+  </div>
 
-<div class="card card-film">
-  <h3>Venice, Telluride and Toronto Kick Off Fall Festival Season and the Official Oscar Race</h3>
-  <ul>
-    <li>The Ankler's Richard Rushfield notes the Dolby finish line is six months out, with this year's crop already drowned out by scandal-chasing and standing-ovation timers.
-      <ul>
-        <li>Comes off the biggest summer in box office history, a tonal whiplash the piece frames as symptomatic of an industry that talks about everything except the films themselves.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span><a class="read-more" href="https://theankler.com/the-6-worst-people-youll-meet-during-fall-festival-season/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card film">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>TIFF Opens Today + Oasis Concert Film 'Don't Look Back in Anger' Highly Recommended</h3>
+    <p>The Toronto International Film Festival kicks off today, drawing Hollywood's theater geeks and A/V crowd north. Separately, McNulty gives a strong recommend to <em>Don't Look Back in Anger</em> (Oasis concert doc): "a reaffirming experience for humanity in the age of AI music." Catch it in IMAX this weekend.</p>
+  </div>
 
-<div class="section-header">📺 Television</div>
+  <div class="card film">
+    <div class="card-meta"><span class="source-tag">Deadline</span></div>
+    <h3>Sarah Catherine Hook Joins Disney/Fox Crush; Lionsgate + Toei Animation Deal</h3>
+    <p>Disney/Fox set <em>White Lotus</em> breakout Sarah Catherine Hook to star in <em>Crush</em>, a snake-based thriller shooting in Australia this fall. Separately, Lionsgate set a distribution deal with Toei Animation to bring the Japanese studio's content to the U.S., starting with <em>Monkey Quest</em> in 2027.</p>
+  </div>
 
-<div class="card card-tv">
-  <h3>Netflix Beats Ellison's Paramount to Land "Lonesome Dove" Rights in Fierce Bidding War</h3>
-  <ul>
-    <li>Thomas Tull's Teton Ridge Entertainment sold the McMurtry tetralogy to Netflix after Paramount never even sent anyone to meet with writers Zoe Kazan and Jeb Stuart.
-      <ul>
-        <li>David Ellison reportedly tried to jump in with a late offer once he learned his own studio hadn't bid — despite Lonesome Dove being one of his favorite properties; Netflix's deal was already effectively locked.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span><a class="read-more" href="https://puck.news/how-netflix-won-the-lonesome-dove-rodeo/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <!-- TELEVISION -->
+  <div class="section-header">📺 Television</div>
 
-<div class="card card-tv">
-  <h3>ABC Denies "Jimmy Kimmel Live" Is Ending in 2027, Calls Report "Inaccurate"</h3>
-  <ul>
-    <li>Page Six reported Kimmel's contract would not be renewed after this season; ABC pushed back the same day Kimmel returned from summer break for Season 24.
-      <ul>
-        <li>Kimmel signed a one-year extension last December after a Trump-feud suspension controversy; that deal expires later this year.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">TVLine / TheWrap</span><a class="read-more" href="https://www.tvline.com/2253456/jimmy-kimmel-live-ending-abc-2027-report/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card tv">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>NFL Season Opens Tonight on NBC + New TV Premieres</h3>
+    <p>Football is back on NBC tonight. Also premiering: <strong>Peacock's The Paper Season 2</strong> (all episodes drop); <strong>Bravo's Real Housewives of New York Season 16</strong>; <strong>FX/Hulu The Drop: A Snowfall Saga</strong>. NBC will air new <em>Tonight Show</em> episodes after 4 Sunday NFL games this fall.</p>
+  </div>
 
-<div class="section-header">🟣 Streaming &amp; Box Office</div>
+  <div class="card tv">
+    <div class="card-meta"><span class="source-tag">78th Emmy Awards</span></div>
+    <h3>Emmy Awards Sept. 14: 'Widow's Bay' Projected for 15 Wins; 'The Pitt' Leads with 25 Nominations</h3>
+    <p>Mariska Hargitay hosts the 78th Primetime Emmy Awards on NBC, September 14. Horror comedy <em>Widow's Bay</em> is the runaway favorite — projected to win 15 Emmys including Outstanding Comedy. <em>The Pitt</em> leads all shows with 25 nominations. Jean Smart projected for a record 8th acting Emmy in the final season of <em>Hacks</em>.</p>
+  </div>
 
-<div class="card card-streaming">
-  <h3>Netflix to Begin Publicly Reporting Box Office for Its Upcoming Six-Film Theatrical Slate</h3>
-  <ul>
-    <li>The slate includes Cannes Palme d'Or winner "La Bola Negra," David Fincher's "The Further Mis-Adventures of Cliff Booth," and Peter Berg's "Mosquito Bow."
-      <ul>
-        <li>Marks a notable shift for a streamer that has historically guarded theatrical performance data closely.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span><a class="read-more" href="https://deadline.com/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card tv">
+    <div class="card-meta"><span class="source-tag newsletter">Ankler / Richard Rushfield</span></div>
+    <h3>Rushfield: 'The 6 Worst People You'll Meet During Fall Festival Season'</h3>
+    <p>Rushfield's essential field guide to the scandal hunters, ovation timers, and insta-critics flooding Telluride and Toronto — "vile species drowning out the movies." Required reading before boarding a flight to TIFF. — <em>The Ankler, Sept. 8</em></p>
+  </div>
 
-<div class="card card-streaming">
-  <h3>Brad Pitt's Alaska Survival Thriller "Heart of the Beast" Headlines September's Slate</h3>
-  <ul>
-    <li>The David Ayer-directed film casts Pitt as a stranded Special Forces veteran alongside his retired combat dog, joining "Practical Magic 2" and "Resident Evil" in the fall lineup.
-      <ul>
-        <li>Part of a September slate boxoffice trackers are watching closely after summer 2026's record-breaking run.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Boxoffice Pro</span><a class="read-more" href="https://www.boxofficepro.com/the-biggest-movies-coming-to-theaters-september-2026/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card tv">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>Channel 4 Cutting 28% of Workforce — ~340 Jobs by Year-End</h3>
+    <p>The UK broadcaster confirmed sweeping layoffs — roughly 340 positions, or 28% of staff, gone by end of 2026. CEO Priya Dogra framed it as a "long-term transformation strategy" meant to direct more revenue toward "distinctive British content." SNL UK goes the creator route for Week 2: Amelia Dimoldenberg (Chicken Shop Date) hosts, followed by Jamie Demetriou in Week 3.</p>
+  </div>
 
-<div class="section-header">🎵 Music &amp; Celebrity</div>
+  <!-- STREAMING & BOX OFFICE -->
+  <div class="section-header">🟣 Streaming & Box Office</div>
 
-<div class="card card-music">
-  <h3>Hyundai Taps Scarlett Johansson to Replace Jason Bateman as Its Ad Voice</h3>
-  <ul>
-    <li>She debuts tonight during the NFL opener with a voiceover for "The Mark of a Warrior," a Hope on Wheels ad about a child's cancer battle.
-      <ul>
-        <li>The switch caps a competitive review of Hyundai's celebrity-spokesperson strategy heading into the 2026 ad calendar's biggest night.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Ad Age</span><a class="read-more" href="https://adage.com/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card streaming">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>Netflix Film Chart: 'The Whisper Man' Posts Massive Week 2 Jump (+50%), 33.4M Views</h3>
+    <p>The DeNiro serial killer thriller had a nearly 50% week-over-week view-count increase — one of the biggest single weeks for a Netflix film this summer. Danish thriller <em>The Secret Woman</em> also strong (19.3M views, 2nd biggest week for Netflix international film). WWE RAW failed to chart globally — possibly for the first time ever. Shrek continues to pull 4.3M+ views weekly in prep for Shrek 5 next summer.</p>
+  </div>
 
-<div class="card card-music">
-  <h3>Colman Domingo to Emcee Kering Foundation Dinner, With Paris Hilton DJing After-Party</h3>
-  <ul>
-    <li>The fifth annual Caring for Women Dinner takes place September 10, continuing Kering's push to spotlight gender-violence philanthropy through star power.
-      <ul>
-        <li>Hilton's after-party DJ set adds a celebrity-nightlife hook to what's typically a formal fundraising evening.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Wire</span><a class="read-more" href="https://www.eonline.com/news" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card streaming">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>New on Streaming Today: Tyler Perry's 'Why Did I Get Married Again?', 'The Paper' S2, More</h3>
+    <p><strong>Netflix:</strong> Tyler Perry's <em>Why Did I Get Married Again?</em>; Stavros Halkias: Uncle Stav; Dang! &nbsp;|&nbsp; <strong>FX/Hulu:</strong> The Drop: A Snowfall Saga &nbsp;|&nbsp; <strong>Peacock:</strong> The Paper Season 2 (all episodes) &nbsp;|&nbsp; <strong>Neon:</strong> Hope &nbsp;|&nbsp; Coming soon: HBO's Siren doc (Sept. 22); Apple TV <em>Being Heumann</em> (Nov. 13).</p>
+  </div>
 
-<div class="section-header">💻 Technology</div>
+  <div class="card streaming">
+    <div class="card-meta"><span class="source-tag newsletter">Ankler / Reel AI</span></div>
+    <h3>Reel AI: Amazon, Google, Apple Could Build Their Own Sports Leagues</h3>
+    <p>Erik Barmack argues that with robotics divisions at Amazon, Google, and Apple, the tech giants' long game may involve building — not renting — sports leagues. As rights costs keep inflating, owning the product makes more economic sense than perpetually paying for broadcast access. — <em>The Ankler, Reel AI, Sept. 8</em></p>
+  </div>
 
-<div class="card card-tech">
-  <h3>Apple's "Surprise and Shine" Event Today Is First Under New CEO John Ternus</h3>
-  <ul>
-    <li>Apple unveils its lineup at 1PM ET, expected to include the iPhone 18 Pro, iPhone 18 Pro Max and a foldable iPhone Ultra — skipping a standard iPhone 18 until spring 2027.
-      <ul>
-        <li>All three new iPhones reportedly use a 2nm A20 Pro chip; the event also marks Tim Cook's handoff of the CEO role to Ternus, effective September 1.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">MacRumors / 9to5Mac</span><a class="read-more" href="https://www.macrumors.com/guide/apple-september-2026-what-to-expect/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <!-- MUSIC & CELEBRITY -->
+  <div class="section-header">🎵 Music & Celebrity</div>
 
-<div class="card card-tech">
-  <h3>XPeng Activates Humanoid Robot Production Line in Guangzhou</h3>
-  <ul>
-    <li>The company's IRON humanoid robot line went live September 8, with core process automation exceeding 80% at automotive-grade quality standards.
-      <ul>
-        <li>Part of a broader wave of Chinese hardware manufacturers pushing into humanoid robotics production at industrial scale.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Tech Startups</span><a class="read-more" href="https://techstartups.com/2026/09/09/top-tech-news-today-september-9-2026-google-meta-openai-xiaomi-more/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card music">
+    <div class="card-meta"><span class="source-tag newsletter">THR Today</span></div>
+    <h3>Suno Launches New AI Music Models Built on Licensed Catalogs from WMG, BMG, Believe</h3>
+    <p>New models V6, V6-wild and V6-mini retire Suno's older, unlicensed models — a turning point after the platform faced mass copyright-infringement allegations from across the music industry.</p>
+  </div>
 
-<div class="card card-tech">
-  <h3>EU's Cyber Resilience Act Incident-Reporting Rules Take Effect This Month</h3>
-  <ul>
-    <li>Companies selling connected products in the EU must now report vulnerabilities and incidents under the CRA, with full product-security requirements following in December 2027.
-      <ul>
-        <li>Adds to a broader 2026 regulatory push holding tech companies accountable for data protection even as U.S. federal policy trends deregulatory.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Law Firm Alerts</span><a class="read-more" href="https://www.mofo.com/resources/insights/251218-data-cyber-privacy-predictions-for-2026" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card music">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>Ari Emanuel Book Tour: NYC, Chicago, L.A. — With Maddow, Axelrod, and Swisher</h3>
+    <p>WME's Ari Emanuel hits the road: <strong>Sept. 22</strong> at the 92Y NYC with Rachel Maddow; <strong>Sept. 23</strong> Chicago Harris Theater with David Axelrod; <strong>Sept. 29</strong> L.A. Wilshire Ebell with Kara Swisher. Oil over $100/barrel makes the private jet awkward, but "we gotta move some units." All ticketed through MARI — #synergy.</p>
+  </div>
 
-<div class="section-header">🤖 Artificial Intelligence</div>
+  <div class="card music">
+    <div class="card-meta"><span class="source-tag">Bloomberg / Apple</span></div>
+    <h3>Apple iFold Launches Today — $2,000+ Foldable iPhone, a Decade in the Making</h3>
+    <p>Apple's foldable iPhone is finally here at $2,000+. A decade in development, per Bloomberg. A major cultural moment for Apple fans and a test of whether premium foldables can succeed where Android versions haven't.</p>
+  </div>
 
-<div class="card card-ai">
-  <h3>Meta Launches Muse, a Personal AI Agent That Books, Buys and Negotiates for You</h3>
-  <ul>
-    <li>Muse runs in a secure virtual machine with its own browser, connecting to Google Workspace, Ticketmaster, OpenTable, Spotify and Apple Health, with checkout via Stripe's Link wallet.
-      <ul>
-        <li>Rolling out now on iOS, Android and web with a free tier plus $20 and $100 paid tiers; Meta says it won't feed Muse conversations into its ad-targeting systems.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">TechCrunch</span><a class="read-more" href="https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <!-- TECHNOLOGY -->
+  <div class="section-header">💻 Technology</div>
 
-<div class="card card-ai">
-  <h3>Google DeepMind Releases AlphaGenome Atlas, Mapping Every Possible Human DNA Variant</h3>
-  <ul>
-    <li>The 1-petabyte database precomputes molecular-effect predictions for all 9 billion possible single-letter DNA changes, more than 30x larger than the AlphaFold Database.
-      <ul>
-        <li>Early users at the Broad Institute and UK Biobank are already surfacing new disease-linked variants; free for noncommercial research via a web portal, with commercial access via Google Cloud "coming soon."</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Google DeepMind</span><a class="read-more" href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card tech">
+    <div class="card-meta"><span class="source-tag newsletter">Puck / Eriq Gardner</span></div>
+    <h3>OpenAI AI Copyright Case Goes to Summary Judgment — DOJ's 'Joan Didion' Defense</h3>
+    <p>Summary judgment briefing has begun in the landmark AI copyright cases (publishers and book authors vs. OpenAI/Microsoft). The Trump DOJ submitted a brief with a narrow conception of market harm, using the analogy of a teenage Joan Didion typing out Hemingway to "learn how the sentences worked" — asking whether she would have owed him money when she later published. The Copyright Office's view is that licensing markets matter significantly. More than 120 content-AI licensing agreements have been identified; $1B+ spent on book training rights. The outcome will shape whether AI training licenses are legally mandated or commercially optional. — <em>Puck / Eriq Gardner</em></p>
+  </div>
 
-<div class="card card-ai">
-  <h3>Mistral Raises Record $3.5B at $24.4B Valuation, Led by Samsung</h3>
-  <ul>
-    <li>The round reinforces Mistral's position as Europe's leading "sovereign AI" contender, even as its resources remain dwarfed by U.S. rivals like Anthropic.
-      <ul>
-        <li>Samsung plans to use Mistral's AI in chip manufacturing; the deal follows criticism of Mistral's decision to commercialize a model from China's Z.ai alongside its own open-weight offerings.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Eye on AI</span><a class="read-more" href="https://fortune.com/section/artificial-intelligence/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card tech">
+    <div class="card-meta"><span class="source-tag newsletter">Ankler Features</span></div>
+    <h3>George Clooney at Lumière: 'We Are Way Behind the Eight Ball' on AI</h3>
+    <p>Claire Atkinson's Q&A with Clooney from Macron's Lumière Summit surfaced strong warnings about Hollywood's unpreparedness for AI's pace. Clooney's comments echo Richard Rushfield's recent Ankler Feature on Kathleen Kennedy's secret AI talks — a human-controlled AI framework now going public, with a signed framework including Oscar winners, studio execs, and Silicon Valley. — <em>The Ankler</em></p>
+  </div>
 
-<div class="card card-ai">
-  <h3>Robots Are Coming for Sports — and Hollywood Should Be Watching Closely</h3>
-  <ul>
-    <li>The Ankler's Erik Barmack argues Amazon, Google and Apple's robotics divisions could one day build the sports leagues they now spend billions renting.
-      <ul>
-        <li>At Beijing's World Humanoid Robot Games, a robot ran 100m in 8.64 seconds — faster than Usain Bolt — before crashing; streamers are set to spend $14.2B on sports rights in 2026 alone chasing scarcity robots could eventually undercut.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span><a class="read-more" href="https://theankler.com/yes-robots-are-coming-for-sports/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
+  <div class="card tech">
+    <div class="card-meta"><span class="source-tag">AI Weekly / TechStartups</span></div>
+    <h3>OpenAI AI Cracks Millennium Prize Math Problem in 88 Hours</h3>
+    <p>OpenAI says an AI solved one of math's Millennium Prize Problems — the hardest unsolved problems in mathematics — in 88 hours, then walked straight into a fight over credit. Other AI news today: Cognition AI (coding startup) valued at $48B; Meta pushing AI agents into email/calendar/checkout; Qualcomm and Amazon announce multi-generation custom AI chip collaboration for AWS; Google securing nuclear power for AI data centers in Finland; China building a 100,000-GPU cluster on domestic silicon.</p>
+  </div>
 
-<div class="section-header">🔁 In Case You Missed It</div>
+  <!-- MEDIA BUSINESS -->
+  <div class="section-header">📊 Media Business</div>
 
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 7 days</span><span class="badge-updated">✅ Updated Today</span></div>
-  <h3>Anna Wintour's Galliano Exhibit Disaster</h3>
-  <ul><li>Puck's "Anna, Three Ways" postmortem examines the fallout across media, fashion and the art market, as Wintour calls Galliano's withdrawal "very courageous." <span class="chip-new">New Today</span></li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
-</div>
+  <div class="card biz">
+    <div class="card-meta"><span class="source-tag newsletter">Puck / Eriq Gardner</span></div>
+    <h3>Coppola's Defamation Suit vs. Variety Tossed — He Now Owes Their Legal Fees</h3>
+    <p>A California appeals court dismissed Coppola's defamation claims against Variety over its <em>Megalopolis</em> coverage — finding the article contained "non-actionable opinion" and a factual statement he couldn't disprove. Barring further appeal, Coppola must cover Variety's legal costs. "Megalopolis somehow just got even more expensive." — <em>Puck / Eriq Gardner</em></p>
+  </div>
 
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 6 days</span></div>
-  <h3>Federal Film Tax Credit Bill Push</h3>
-  <ul><li>Whether Congress passes a national production incentive before year's end remains an open question; no new developments reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
-</div>
+  <div class="card biz">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>AMC Settles Walking Dead Lawsuit with Kirkman — $85M Now, $35M in January</h3>
+    <p>AMC Global settled the four-year Walking Dead profit-sharing suit with creator Robert Kirkman and producers, days before trial was to begin. AMC pays $85M by end of September and $35M by end of January, taking an $85M write-down in Q3. — <em>Deadline</em></p>
+  </div>
 
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 6 days</span><span class="badge-updated">✅ Updated Today</span></div>
-  <h3>Bartiromo-Fox Legal Fallout</h3>
-  <ul><li>Dylan Byers reports Bartiromo has now retained power lawyer Bryan Freedman, who says "we have the receipts and witnesses" ahead of a likely fight with Fox. <span class="chip-new">New Today</span></li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
-</div>
+  <div class="card biz">
+    <div class="card-meta"><span class="source-tag newsletter">Puck / Eriq Gardner</span></div>
+    <h3>Skip Brittenham Estate Reveals ~$10M Personal Income for 2024</h3>
+    <p>A probate petition for the late Ziffren Brittenham founding partner Skip Brittenham — who died last year at 83, having represented Harrison Ford and Eddie Murphy — shows he held ~14% interest in the firm and cleared nearly $10M in 2024 personal income, putting him in the range of average equity partners at Quinn Emanuel. The firm uses "eat what you kill" compensation. — <em>Puck</em></p>
+  </div>
 
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 16 days</span></div>
-  <h3>WSJ AI Op-Ed "Rubicon" Controversy</h3>
-  <ul><li>Debate over AI-written op-eds as normalized media practice continues; no new developments reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
-</div>
+  <div class="card biz">
+    <div class="card-meta"><span class="source-tag newsletter">The Wakeup</span></div>
+    <h3>DOJ Issues 'Second Request' on Fox/Roku Deal</h3>
+    <p>The Department of Justice issued a formal "Second Request" on the Fox/Roku deal — asking for additional information and significantly extending the merger review timeline. Fox confirmed the inquiry to THR. — <em>The Wakeup / THR</em></p>
+  </div>
 
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 16 days</span></div>
-  <h3>UTA vs. Variety Feud Escalates</h3>
-  <ul><li>The underlying dispute between UTA's David Kramer and Variety remains unresolved; no new developments reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span></div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 13 days</span></div>
-  <h3>Meta's Teen-Safety Settlement</h3>
-  <ul><li>The roughly $18B settlement's disputed $5B "bounty" structure remains under scrutiny; no new filings reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 18 days</span></div>
-  <h3>Paramount–WBD Merger Fight</h3>
-  <ul><li>Deal remains on track for a Q3 close pending regulatory clearance; WBD shareholders get a $0.25/share quarterly "ticking fee" if it slips past September 30. No new filings reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Variety</span></div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 26 days</span></div>
-  <h3>Hayden Panettiere Death Investigation</h3>
-  <ul><li>Formal toxicology confirmation still pending; no new developments reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">The Ankler</span></div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 9 days</span></div>
-  <h3>Letterboxd Sale Process</h3>
-  <ul><li>Puck's Julia Alexander continues to question whether the reported $1 billion price tag holds up; no new developments reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 9 days</span></div>
-  <h3>Sony Music/Warner Chappell vs. Anthropic Copyright Suit</h3>
-  <ul><li>Multi-billion-dollar music-publisher lawsuit over Claude's training data remains in early stages; no new filings reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 9 days</span><span class="badge-updated">✅ Updated Today</span></div>
-  <h3>Oscar-Winners Hollywood Accounting Trial</h3>
-  <ul><li>Jury selection begins tomorrow, September 10, in the "Gangs of New York," "Traffic" and "Ali" chain-of-title fight. <span class="chip-new">New Today</span></li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Puck</span></div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 8 days</span><span class="badge-updated">✅ Updated Today</span></div>
-  <h3>NBA/Clippers: Ballmer's Defiant Fight-Back</h3>
-  <ul><li>Ballmer's attorney David Kelley calls the NBA's investigation a "witch hunt" and says the team is "exploring every legal remedy" after the historic $30M fine and picks forfeiture. <span class="chip-new">New Today</span></li></ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Washington Post</span></div>
-</div>
-
-<div class="card card-icymi">
-  <div class="icymi-meta"><span class="badge-ongoing">🔁 Ongoing</span><span class="badge-running">Running 3 days</span></div>
-  <h3>Macklemore "Free Palestine" Tour Backlash</h3>
-  <ul><li>The Israeli American Council's petition to remove him from Ed Sheeran's tour remains unresolved; no new developments reported today.</li></ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">THR Today</span></div>
-</div>
-
-<div class="section-header">📈 Today's Deep Dive</div>
-
-<div class="card card-deepdive">
-  <h3>Why OpenAI's Navier-Stokes "Breakthrough" Says More About AI's Credibility Crisis Than About Math</h3>
-  <ul>
-    <li><span class="deep-label">Why It Matters</span>
-      <ul>
-        <li>OpenAI raced to claim a solution to the Navier-Stokes Millennium Prize problem within a week of hearing Anthropic-affiliated mathematicians were close, deploying a 10,000-sub-agent system after admitting it hadn't seriously attempted the problem before.</li>
-        <li>Mathematician Tristan Buckmaster alleges OpenAI's Sebastien Bubeck offered to strip his Anthropic-affiliated collaborator Levent Alpoge's name from credit, then allegedly threatened him — "Why would you ruin your career?" — when he refused to go along with OpenAI's preferred framing.</li>
-        <li>Fields-caliber mathematician Terence Tao warns AI labs are "strip-mining" open problems for marketing proof points, comparing it to looting an archaeological site and destroying the context that trains the next generation of researchers.</li>
-      </ul>
-    </li>
-    <li><span class="deep-label">The Money</span>
-      <ul>
-        <li>OpenAI disclosed it burned roughly 1,000x its typical compute spend — about $2 million worth — chasing the result in a single week, a scale of spending explainable mainly by competitive panic with Anthropic.</li>
-        <li>Both companies' bankers are simultaneously lobbying credit-rating agencies for investment-grade status ahead of prospective IPOs (Anthropic's said to target roughly $100B), meaning any research-integrity scandal lands directly on financing costs.</li>
-      </ul>
-    </li>
-    <li><span class="deep-label">Historical Context</span>
-      <ul>
-        <li>Buckmaster calls it a "Deep Blue-Kasparov moment" for mathematics, but unlike chess's clean 1997 computer win, this one is clouded by unresolved allegations that OpenAI's model had access to a rival researcher's private work.</li>
-      </ul>
-    </li>
-    <li><span class="deep-label">Watch For</span>
-      <ul>
-        <li>Whether OpenAI publishes a technical audit clarifying if its model was trained on or accessed Buckmaster and Alpoge's private Codex sessions.</li>
-        <li>Bubeck's promised follow-up statement, and whether it calms researcher backlash or further complicates both labs' IPO roadshows.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Eye on AI / Fortune</span><a class="read-more" href="https://fortune.com/section/artificial-intelligence/" target="_blank" rel="noopener">Read More →</a></div>
-</div>
-
-<div class="section-header">🔢 By the Numbers</div>
-
-<div class="card card-numbers">
-  <h3>$120 Million: AMC Ends 9-Year "Walking Dead" Profit Fight With Its Creators</h3>
-  <ul>
-    <li><span class="numbers-label">The Figure</span>
-      <ul>
-        <li>AMC Global Media will pay $120M — $85M by September 18, $35M by January 31, 2027 — settling Robert Kirkman and fellow producers' 2022 breach-of-contract suit (Deadline/Variety, Sept 8, 2026).</li>
-      </ul>
-    </li>
-    <li><span class="numbers-label">Context</span>
-      <ul>
-        <li>Follows AMC's earlier $200M Darabont settlement in 2021; the trial had been set for October 27 before this deal, and future payments count as an advance against ongoing profit participation.</li>
-      </ul>
-    </li>
-    <li><span class="numbers-label">So What</span>
-      <ul>
-        <li>Signals "modified adjusted gross receipts" profit formulas remain a major legal exposure for legacy cable networks still living off franchise-era hits.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Deadline / Variety</span></div>
-</div>
-
-<div class="card card-numbers">
-  <h3>$917 Million: "Spider-Man: Brand New Day" Becomes the Third-Highest-Grossing Film in U.S. History</h3>
-  <ul>
-    <li><span class="numbers-label">The Figure</span>
-      <ul>
-        <li>The film's domestic gross hit $917.76M, passing "Avatar: The Way of Water" for third place all-time (Deadline, Sept 2026).</li>
-      </ul>
-    </li>
-    <li><span class="numbers-label">Context</span>
-      <ul>
-        <li>It reached $900M in 36 days — faster than any film ever, beating "The Force Awakens"'s 50-day pace — and is now the first Marvel movie to cross that threshold.</li>
-      </ul>
-    </li>
-    <li><span class="numbers-label">So What</span>
-      <ul>
-        <li>Puts Sony/Marvel within realistic range of unseating "The Force Awakens"'s $936.6M all-time domestic record.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Deadline</span></div>
-</div>
-
-<div class="card card-numbers">
-  <h3>$30 Million & 5 Draft Picks: The NBA's Unprecedented Penalty on Ballmer's Clippers</h3>
-  <ul>
-    <li><span class="numbers-label">The Figure</span>
-      <ul>
-        <li>The league fined the Clippers $30M, fined Kawhi Leonard $700K personally, suspended owner Steve Ballmer one year, and stripped five first-round picks (Washington Post/GeekWire, Sept 2-3, 2026).</li>
-      </ul>
-    </li>
-    <li><span class="numbers-label">Context</span>
-      <ul>
-        <li>Among the harshest penalties in NBA history for salary-cap circumvention; Ballmer's camp is now calling the investigation a "witch hunt" and weighing legal remedies.</li>
-      </ul>
-    </li>
-    <li><span class="numbers-label">So What</span>
-      <ul>
-        <li>Sets a new deterrence bar for "off-court income" workarounds just as media-rights values climb toward $10B+ a year league-wide.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag wire-tag">Washington Post</span></div>
-</div>
-
-<div class="card card-numbers">
-  <h3>84% vs. 44%: The AI Optimism Gap Between Experts and Everyone Else</h3>
-  <ul>
-    <li><span class="numbers-label">The Figure</span>
-      <ul>
-        <li>Stanford HAI's 2026 AI Index finds 84% of AI experts expect a positive impact on medicine over 20 years, versus just 44% of average Americans (via Pew Research, cited in Eye on AI, Sept 2026).</li>
-      </ul>
-    </li>
-    <li><span class="numbers-label">Context</span>
-      <ul>
-        <li>The gap widens further on K-12 education (61% of experts positive vs. 24% of the public) and on AI's effect on people's own jobs (73% vs. 23%).</li>
-      </ul>
-    </li>
-    <li><span class="numbers-label">So What</span>
-      <ul>
-        <li>A widening trust gap is a growing communications problem for an industry chasing $100B+ IPO valuations built on public-facing products.</li>
-      </ul>
-    </li>
-  </ul>
-  <div class="card-footer"><span class="source-tag newsletter-tag">Eye on AI / Fortune</span></div>
-</div>
-
-<div class="footer-block">
-  Refreshed 7:00 AM, Wednesday, September 9, 2026<br>
-  © 2026 Verum Ventus LLC. All rights reserved.
-  <div class="page-number">Page 1 of 1</div>
-</div>
+  <div class="card biz">
+    <div class="card-meta"><span class="source-tag">Deadline / Variety</span></div>
+    <h3>Roku Acquires Frndly TV for $185M; WBD Takes Minority Stake in OSN Streaming</h3>
+    <p>Streaming consolidation continues: Roku closed its $185M acquisition of Frndly TV, adding a budget-friendly live TV bundle to its platform. Warner Bros. Discovery took a $57M minority investment in OSN Streaming, expanding its presence in the Middle East/North Africa. Both moves reflect the post-merger restructuring wave across the industry.</p>
+  </div>
 
 </div>
+
+<div class="footer">
+  <p><strong>Sources:</strong> The Wakeup (Sean McNulty / The Ankler, Sept. 9) &nbsp;·&nbsp; Puck What I'm Hearing (Kim Masters, Eriq Gardner, Sept. 8) &nbsp;·&nbsp; Puck In the Room (Dylan Byers) &nbsp;·&nbsp; The Ankler Features (Claire Atkinson) &nbsp;·&nbsp; Richard Rushfield / The Ankler &nbsp;·&nbsp; Reel AI (Erik Barmack) &nbsp;·&nbsp; Prestige Junkie (Katey Rich) &nbsp;·&nbsp; THR Today (Sept. 9) &nbsp;·&nbsp; Variety &nbsp;·&nbsp; Deadline &nbsp;·&nbsp; THR &nbsp;·&nbsp; AI Weekly &nbsp;·&nbsp; TechStartups &nbsp;·&nbsp; Bloomberg</p>
+  <p style="margin-top:8px;">Updated automatically each morning · Powered by Claude &nbsp;·&nbsp; Sources: The Ankler website (theankler.com) + Gmail newsletters (messingerwork@gmail.com)</p>
+  <p style="margin-top:8px;">Refreshed ~11:25 AM ET</p>
+</div>
+
 </body>
 </html>
