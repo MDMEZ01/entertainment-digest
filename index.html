@@ -3,31 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Entertainment & Tech Update – Friday, September 18, 2026</title>
+<title>Daily Entertainment & Tech Update</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f4f6; color: #1a1a1a; line-height: 1.6; }
-  .header { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); padding: 48px 24px 36px; text-align: center; }
-  .header .badge { display: inline-block; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 4px 16px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #ddd; margin-bottom: 16px; }
-  .header h1 { font-size: 2.2rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; margin-bottom: 8px; }
-  .header .date { color: #bbb; font-size: 1rem; }
-  .container { max-width: 900px; margin: 0 auto; padding: 32px 16px; }
-  .section-header { font-size: 0.95rem; font-weight: 800; letter-spacing: 1px; color: #24243e; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e5e5ea; }
-  .section-header:first-child { margin-top: 0; }
-  .card { background: #ffffff; border-radius: 10px; padding: 18px 20px 14px; margin-bottom: 14px; border-left: 4px solid #999; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-  .card h3 { font-size: 1.02rem; font-weight: 700; color: #14141a; margin-bottom: 10px; line-height: 1.35; }
-  .card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
-  .card ul { padding-left: 20px; margin: 0 0 10px 0; }
-  .card ul li { font-size: 0.9rem; color: #333; margin-bottom: 5px; line-height: 1.5; }
-  .card ul li strong { color: #000; }
-  .source-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 3px 9px; border-radius: 4px; background: #eee; color: #666; }
-  .source-tag.newsletter-tag { background: #fffbe6; color: #92600a; }
-  .source-tag.wire-tag { background: #eef2ff; color: #3730a3; }
-  .read-more { display: inline-block; margin-top: 6px; font-size: 0.8rem; font-weight: 600; color: #3730a3; text-decoration: none; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f2f3f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1f2430;
+  }
+  .header {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    padding: 32px 20px 28px;
+    text-align: center;
+  }
+  .header h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+  .header .date {
+    font-size: 15px;
+    color: #d8d4f5;
+    margin-bottom: 14px;
+  }
+  .badge-morning {
+    display: inline-block;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+  .section {
+    margin-bottom: 34px;
+  }
+  .section-title {
+    font-size: 19px;
+    font-weight: 800;
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e4ea;
+    color: #14161f;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+    border-left: 5px solid #999;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #14161f;
+  }
+  .card ul {
+    margin: 0 0 10px;
+    padding-left: 20px;
+  }
+  .card ul li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333844;
+    margin-bottom: 6px;
+  }
+  .card ul ul { margin-top: 4px; margin-bottom: 2px; padding-left: 18px; list-style-type: circle; }
+  .card ul ul li { font-size: 13px; color: #4b5563; margin-bottom: 3px; line-height: 1.45; }
+  .source-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .newsletter-tag { background: #fffbe6; color: #92600a; }
+  .wire-tag { background: #eef2ff; color: #3730a3; }
+  .read-more {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4338ca;
+    text-decoration: none;
+    vertical-align: middle;
+  }
   .read-more:hover { text-decoration: underline; }
-  .footer { text-align: center; padding: 40px 24px; color: #888; font-size: 0.78rem; border-top: 1px solid #e5e5ea; margin-top: 40px; }
-  .footer strong { color: #555; }
-  .footer .copyright { margin-top: 10px; color: #aaa; }
 
   /* Standard section/card colors */
   .card-breaking   { border-left-color: #e63946; }
@@ -38,10 +114,6 @@
   .card-tech       { border-left-color: #e9c46a; }
   .card-ai         { border-left-color: #0891b2; }
   .card-biz        { border-left-color: #f4a261; }
-
-  /* Nested sub-bullets */
-  .card ul ul { margin-top: 4px; margin-bottom: 2px; padding-left: 18px; list-style-type: circle; }
-  .card ul ul li { font-size: 13px; color: #4b5563; margin-bottom: 3px; line-height: 1.45; }
 
   /* ICYMI section */
   .card-icymi { border-left-color: #0ea5e9; }
@@ -111,680 +183,563 @@
     margin: 10px 0 3px;
   }
   .numbers-label:first-child { margin-top: 0; }
+
+  .gap-note {
+    font-size: 12px;
+    color: #94a3b8;
+    font-style: italic;
+    margin: -6px 0 16px;
+  }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div class="badge">Morning Edition</div>
   <h1>🎬 Daily Entertainment &amp; Tech Update</h1>
-  <div class="date">Friday, September 18, 2026</div>
+  <div class="date">Sunday, September 20, 2026</div>
+  <span class="badge-morning">☀️ Morning Edition</span>
 </div>
 
 <div class="container">
 
   <!-- 1. MEDIA BUSINESS -->
-  <div class="section-header">📊 Media Business</div>
+  <div class="section">
+    <h2 class="section-title">📊 Media Business</h2>
 
-  <div class="card card-biz">
-    <div class="card-meta"><span class="source-tag wire-tag">THR</span></div>
-    <h3>Disney Names Adam Smith Streaming Chairman in Sweeping D2C Shakeup</h3>
-    <ul>
-      <li>Smith is elevated to Chairman of Direct-to-Consumer with full oversight of Disney+/Hulu product, engineering, ad tech, programming and data; co-Prez Joe Earley shifts to a new content-strategy role.
-        <ul>
-          <li>DTC international originals chief Eric Schrier is exiting for a production deal at Disney Entertainment Studios; the restructured team reports through Dana Walden and Deb OConnell.</li>
-        </ul>
-      </li>
-      <li>The reshuffle lands alongside Disney+'s widening creator push, adding a library and content deal with YouTube kids giant Like Nastya (450B+ views).
-        <ul>
-          <li>It follows recent DIS+ pacts with Gracie's Corner and Dhar Mann Studios, plus a broader podcast expansion detailed by The Ankler.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">The Hollywood Reporter</span>
-    <a class="read-more" href="https://www.hollywoodreporter.com/business/business-news/disney-streaming-chairman-adam-smith-joe-earley-tv-1236704657/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-biz">
+      <h3>FCC Clears Paramount's Foreign-Financing Waiver for WBD Deal</h3>
+      <ul>
+        <li>Regulator approved a petition letting Paramount exceed the 25% foreign-ownership cap on broadcast licenses to accept Middle East financing.
+          <ul>
+            <li>Saudi PIF, Qatar Investment Authority and Abu Dhabi Investment Authority combine for roughly $24B, per THR.</li>
+            <li>Foreign investors will hold a 49.5% financial stake in the combined Paramount-WBD company; Ellison/RedBird retain 100% voting control.</li>
+          </ul>
+        </li>
+        <li>Approval clears one regulatory hurdle even as the California antitrust fight over the same $110B merger remains unresolved.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Today</span>
+      <a href="https://www.hollywoodreporter.com/business/business-news/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-biz">
-    <div class="card-meta"><span class="source-tag wire-tag">Deadline</span></div>
-    <h3>FCC Clears the Way for Foreign Money in the Paramount-Warner Merger</h3>
-    <ul>
-      <li>The commission waived its 25% foreign-ownership cap, allowing up to ~49.5% aggregate foreign equity in the combined company.
-        <ul>
-          <li>Saudi Arabia's PIF gets ~15.1%, with other sovereign wealth funds accounting for the remaining ~38.5% combined; the Ellison family and RedBird Capital keep 100% voting control.</li>
-        </ul>
-      </li>
-      <li>Democratic Commissioner Anna Gomez dissented, warning the move hands "repressive governments" indirect stakes in a major U.S. media company.</li>
-    </ul>
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/09/fcc-foreign-ownership-paramount-warner-bros-discovery-1237106980/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-biz">
+      <h3>Disney Shuffles Streaming Leadership: Adam Smith Named Sole DTC Chief</h3>
+      <ul>
+        <li>Adam Smith becomes chairman of Disney's direct-to-consumer division, overseeing Disney+/Hulu product, engineering, ad tech and data; co-president Joe Earley is sidelined.
+          <ul>
+            <li>Earley moves to president of Disney Entertainment TV franchise &amp; content strategy, reporting to Deb O'Connell.</li>
+            <li>DTC international originals chief Eric Schrier departs into a production deal at Disney Entertainment Studios.</li>
+          </ul>
+        </li>
+        <li>Read by insiders as CEO Bob Iger and Josh D'Amaro pushing Disney to operate more like a tech company.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">Puck / THR</span>
+      <a href="https://puck.news/matthewbelloni" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-biz">
-    <div class="card-meta"><span class="source-tag newsletter-tag">Like &amp; Subscribe / The Ankler</span></div>
-    <h3>SiriusXM Wins a Three-Way Bidding War for 'Giggly Squad' — Reportedly North of $150M</h3>
-    <ul>
-      <li>Hannah Berner and Paige DeSorbo signed a new multiyear deal covering exclusive global audio/video ad sales, per The Ankler's Natalie Jarvey.
-        <ul>
-          <li>WME repped the deal; the podcast leaves Acast and joins Conan O'Brien, SmartLess and Call Her Daddy on Sirius's roster.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag newsletter-tag">The Ankler / Like &amp; Subscribe</span>
-    <a class="read-more" href="https://theankler.com/inside-the-giggly-squad-podcast-bidding-war-150m-offers-3-suitors/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-biz">
+      <h3>"Streamflation" Backlash Pushes Netflix, Disney+ and Amazon to Ease Off Hikes</h3>
+      <ul>
+        <li>Variety reports consumer pushback against repeated streaming price increases has reached a "breaking point" across the majors.
+          <ul>
+            <li>Some platforms are reportedly slowing further increases after subscriber backlash.</li>
+          </ul>
+        </li>
+        <li>Comes the same week ESPN and Disney's legacy bundle both raised prices (see Streaming &amp; Box Office).</li>
+      </ul>
+      <span class="source-tag wire-tag">Variety</span>
+      <a href="https://variety.com/2026/tv/news/streaming-price-increases-2026-streamflation-breaking-point-1236859025/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-biz">
-    <div class="card-meta"><span class="source-tag newsletter-tag">Dealmakers / The Ankler</span></div>
-    <h3>Four Bellwether Deals Show Where Hollywood Money Is Actually Moving</h3>
-    <ul>
-      <li>James Cameron bought an AI-assisted 3D conversion company, Patrick Whitesell invested in Alex Cooper's Unwell at a $500M valuation, and Hearst paid $1.2B for Disney's half of A+E, per The Ankler's Ashley Cullins.
-        <ul>
-          <li>Looming over all of it: the NFL's next media-rights cycle, valued around $110B, which insiders call "the biggest single event on the horizon" for entertainment budgets.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag newsletter-tag">The Ankler / Dealmakers</span>
-    <a class="read-more" href="https://theankler.com/4-bellwether-deals-show-where-moneys-moving-and-the-nfl-shock-ahead/" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-biz">
+      <h3>Fox Discloses Executive Pay Amid $22B Roku Deal</h3>
+      <ul>
+        <li>Lachlan Murdoch's FY2026 compensation fell to $31M (from $33M) per Fox's proxy filing.
+          <ul>
+            <li>COO John Nallen's pay rose to $18.1M (from $15.3M); CFO Steve Tomsic dipped slightly to $10.1M.</li>
+          </ul>
+        </li>
+        <li>Disclosure lands as Fox works through its previously announced $22B Roku transaction.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Today</span>
+      <a href="https://www.hollywoodreporter.com/business/business-news/" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card card-biz">
+      <h3>Private Equity Piles Into Author Estates as a Durable-IP Play</h3>
+      <ul>
+        <li>The Ankler reports PE firms are chasing literary catalogs — from Evelyn Waugh to Tennessee Williams — as long-duration IP assets.
+          <ul>
+            <li>Piece names two dominant firms driving the trend and reshaping how author estates negotiate adaptation deals.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag newsletter-tag">The Ankler</span>
+      <a href="https://theankler.com/private-equity-is-coming-for-authors-dead-or-alive" class="read-more">Read More →</a>
+    </div>
   </div>
 
   <!-- 2. BREAKING NEWS -->
-  <div class="section-header">🔴 Breaking News</div>
+  <div class="section">
+    <h2 class="section-title">🔴 Breaking News</h2>
 
-  <div class="card card-breaking">
-    <div class="card-meta"><span class="source-tag wire-tag">NYT</span></div>
-    <h3>'Barely Breathing' Singer and Tony Winner Duncan Sheik Dies at 56</h3>
-    <ul>
-      <li>The singer-songwriter died Thursday after a brief hospitalization; he won two Tony Awards for composing the Broadway musical "Spring Awakening."</li>
-    </ul>
-    <span class="source-tag wire-tag">The New York Times</span>
-    <a class="read-more" href="https://www.nytimes.com/2026/09/18/arts/music/duncan-sheik-dead.html" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-breaking">
+      <h3>Trump Administration Bars CNN, MS Now and Politico From the White House</h3>
+      <ul>
+        <li>The White House said the ban is "effective immediately," with the president calling the outlets' coverage "FAKE NEWS" and suggesting more could follow.
+          <ul>
+            <li>Move escalates an already tense relationship between the administration and mainstream press.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag newsletter-tag">Puck — In the Room</span>
+      <a href="https://puck.news/newsletters/in-the-room/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-breaking">
-    <div class="card-meta"><span class="source-tag wire-tag">Wire</span></div>
-    <h3>UK Rapper and 'Top Boy' Actor Sway DaSafo Dies at 44</h3>
-    <ul>
-      <li>The MOBO Award-winning rapper, also known for his role on "Top Boy," died Sept. 17; KSI led tributes calling him "a true legend."</li>
-    </ul>
-    <span class="source-tag wire-tag">Rolling Out</span>
-    <a class="read-more" href="https://rollingout.com/2026/09/17/sway-dasafo-uk-rap-pioneer-dies-at-44/" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-breaking">
+      <h3>Unsealed Court Docs: OpenAI Executives Privately Called AI Training "Astonishing Theft"</h3>
+      <ul>
+        <li>New filings in NYT v. OpenAI show a 2023 memo from ChatGPT head Nick Turley calling AI an "existential threat" to publishers, and an internal warning that scraping work amounted to "astonishing theft of unprecedented proportions."
+          <ul>
+            <li>Filings also show a staffer telling OpenAI president Greg Brockman he had "a hack to get around" the NYT paywall; Brockman replied "ah nice."</li>
+            <li>Microsoft data cited in the suit: Bing Chat/Search click-through to NYT sites down 87–93%.</li>
+          </ul>
+        </li>
+        <li>Puck's Dylan Byers cautions NYT's PR framing overstates the memo as an admission when it largely predicted public reaction.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">Puck — In the Room</span>
+      <a href="https://puck.news/the-ai-questions-that-the-media-keeps-dodging/" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card card-breaking">
+      <h3>Mellody Hobson Resigns From LA28 Olympics Board</h3>
+      <ul>
+        <li>THR scoop: Hobson — wife of George Lucas — steps down amid what THR calls the organizing committee's "well-publicized cycle of financial, logistical and political challenges."
+          <ul>
+            <li>Timing notable: the Lucas Museum, which she co-founded, opens Sept. 22.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Today</span>
+      <a href="https://www.hollywoodreporter.com/business/business-news/" class="read-more">Read More →</a>
+    </div>
   </div>
 
   <!-- 3. FILM & FESTIVALS -->
-  <div class="section-header">🎥 Film &amp; Festivals</div>
+  <div class="section">
+    <h2 class="section-title">🎥 Film &amp; Festivals</h2>
 
-  <div class="card card-film">
-    <div class="card-meta"><span class="source-tag wire-tag">THR</span></div>
-    <h3>Update: Universal Now Leans Toward Releasing Gibney's 'Musk' Doc After All</h3>
-    <ul>
-      <li>Execs are discussing internally how to handle the film after it became "a political football," reversing course from reports the studio was backing away from releasing it outside North America.
-        <ul>
-          <li>Some insiders had believed Universal would ultimately relinquish the film and return rights to its producers; a release date for the four-hour doc's targeted Q1 2027 window is still not set.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">The Hollywood Reporter</span>
-    <a class="read-more" href="https://www.hollywoodreporter.com/movies/movie-news/universal-alex-gibney-musk-1236704726/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-film">
+      <h3>TIFF 2026 Market Delivers Big Sales Despite Industry's "Dying" Narrative</h3>
+      <ul>
+        <li>Universal and Blumhouse's Atomic Monster bought survival slasher "River" for $10M+, one of the market's headline deals.
+          <ul>
+            <li>A "Hot List" of buzzy titles from Michelle Yeoh, Zack Snyder and Werner Herzog remains in play as buyers keep circling.</li>
+          </ul>
+        </li>
+        <li>Ankler's Richard Rushfield describes a festival packed with "thousands and thousands" of dealmakers and fans paying up to $800 a ticket — including Sarah Polley lining up alongside regular festivalgoers (and Finn Wolfhard) for screenings.</li>
+      </ul>
+      <span class="source-tag wire-tag">Deadline / The Ankler</span>
+      <a href="https://deadline.com/2026/09/river-blumhouse-universal-tiff-1237100328/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-film">
-    <div class="card-meta"><span class="source-tag newsletter-tag">Prestige Junkie</span></div>
-    <h3>TIFF Heads Into Its Final Weekend With 'I Play Rocky' and Julianne Moore's 'The Debut' as Buzz Leaders</h3>
-    <ul>
-      <li>The Ankler's Katey Rich names the Stephan James/Anthony Ippolito boxing drama and Moore's Jesse Eisenberg-directed A24 film as the festival's biggest momentum plays this year.
-        <ul>
-          <li>Javier Bardem's "The Beloved" and Lee Chang-dong's Venice Silver Lion winner "Possible Love" also drew strong buzz — but TIFF's own juried and People's Choice awards aren't announced until the festival concludes Sept. 20.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag newsletter-tag">The Ankler / Prestige Junkie</span>
-    <a class="read-more" href="https://theankler.com/tiffs-oscar-shake-up-i-play-rocky-and-julianne-moore-surge/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-film">
+      <h3>Dueling Final Cuts Threaten to Delay Paramount's "Heart of the Beast"</h3>
+      <ul>
+        <li>Star/producer Brad Pitt and director David Ayer each cut separate versions of the film ahead of its Sept. 25 release, per Puck.
+          <ul>
+            <li>Ayer's cut reportedly tested better with three sources; Pitt's version is backed by producers Damien Chazelle and Olivia Hamilton.</li>
+            <li>Studio heads Dana Goldberg and Josh Greenstein gave the pair more time to reconcile; the release version is "basically Ayer's" cut with Pitt input.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag newsletter-tag">Puck — What I'm Hearing</span>
+      <a href="https://puck.news/ellisons-paramount-relo-threat-real-or-negotiation-ploy/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-film">
-    <div class="card-meta"><span class="source-tag newsletter-tag">What I'm Hearing</span></div>
-    <h3>Universal Denies "Internal Scramble" Over Alex Gibney's Musk Documentary — But Still Won't Set a Release Date</h3>
-    <ul>
-      <li>Matthew Belloni reports Universal is now going on record to deny cold feet, even as the four-hour film remains undated for its planned Q1 2027 window, the same window HBO Max is targeting for the U.S. TV premiere.
-        <ul>
-          <li>Bleecker Street moved its U.S. theatrical release up a week to Oct. 9, citing "intense interest" — a week ahead of A24's competing Elizabeth Holmes documentary "You Can See Everything" (Oct. 16).</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/ellisons-paramount-relo-threat-real-or-negotiation-ploy/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-film">
-    <div class="card-meta"><span class="source-tag newsletter-tag">What I'm Hearing</span></div>
-    <h3>Brad Pitt and David Ayer Fought Over Competing Cuts of Paramount's 'Heart of the Beast'</h3>
-    <ul>
-      <li>The star and director prepared separate edits after disagreeing on tone; Ayer's broader cut tested better, but producers Damien Chazelle and Olivia Hamilton backed Pitt's more esoteric version.
-        <ul>
-          <li>Studio chiefs Dana Goldberg and Josh Greenstein gave the team extra time in post; the final cut is said to lean Ayer's way with "ample suggestions" from Pitt ahead of the Sept. 25 release.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/ellisons-paramount-relo-threat-real-or-negotiation-ploy/" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-film">
+      <h3>Casting &amp; Development Roundup: "Miami Vice" Adds Leguizamo, Disney Taps Toy Story 4 Writer</h3>
+      <ul>
+        <li>John Leguizamo joins Kosinski's "Miami Vice '85" as the villain, alongside Michael B. Jordan, Austin Butler, Alden Ehrenreich and Whitney Peak; production starts in November across New York and Miami.</li>
+        <li>20th Century hired Josh Cooley (Toy Story 4) to write "99 Nights in the Forest," a live-action adaptation of the Roblox game — the division's first video-game feature.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Today</span>
+      <a href="https://www.hollywoodreporter.com/movies/movie-news/" class="read-more">Read More →</a>
+    </div>
   </div>
 
   <!-- 4. TELEVISION -->
-  <div class="section-header">📺 Television</div>
+  <div class="section">
+    <h2 class="section-title">📺 Television</h2>
 
-  <div class="card card-tv">
-    <div class="card-meta"><span class="source-tag wire-tag">THR</span></div>
-    <h3>Kimmel Might Stick Around, But the End of Late Night Is Getting Closer</h3>
-    <ul>
-      <li>Every late-night show outside of "Saturday Night Live" has now been canceled or had its budget slashed, per THR's Alex Weprin, clouding the future of one of TV's defining formats.
-        <ul>
-          <li>The format may still live on — just online rather than on linear broadcast, as networks keep cutting costs around the genre.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">The Hollywood Reporter</span>
-    <a class="read-more" href="https://www.hollywoodreporter.com/tv/tv-news/end-of-late-night-tv-nears-kimmel-lorne-michaels-1236700515/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-tv">
+      <h3>TV's Renewal Season Gets Weird: "Un-Orders" and "Un-Un-Orders" Both Spike</h3>
+      <ul>
+        <li>Disney+ un-ordered "Wonder Man" season 2 after previously greenlighting it (only 10.3M Nielsen hours in its debut week) and scrapped an in-development "Power Rangers" show.
+          <ul>
+            <li>Netflix reversed itself and ordered a new season of "Beauty in Black" after saying it would end at season 3 — Entertainment Strategy Guy calls it a "sneaky big hit."</li>
+            <li>"The Circle" moves from Netflix to Hulu with new live/fan-voting elements; World Series of Poker returns to ESPN after four years on CBS.</li>
+          </ul>
+        </li>
+        <li>Renewal winners: Peacock's "Love Island USA," Paramount+'s "Dutton Ranch" (109M hours in 9 weeks) and Disney+'s "Spidey and His Amazing Friends" (nearly 1.3B hours streamed globally); cancellations include Netflix's "A Good Girl's Guide to Murder" and a quiet-cancelled SEC football docuseries.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">Entertainment Strategy Guy</span>
+      <a href="https://entertainment.substack.com/p/un-orders-are-back-along-with-un" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-tv">
-    <div class="card-meta"><span class="source-tag wire-tag">Deadline / Variety</span></div>
-    <h3>Netflix and Fox Hand Out New Straight-to-Series Orders</h3>
-    <ul>
-      <li>Netflix ordered "All the Rage," a dark comedy from Liz Feldman and Kelly Hutchinson, and extended its overall deal with Feldman.
-        <ul>
-          <li>The series follows two estranged friends who reconnect to take down the man who tore them apart; Gloria Sanchez and Rise Management produce.</li>
-        </ul>
-      </li>
-      <li>Fox greenlit "Katie Greaves," a legal drama starring Edie Falco as a former public defender pulled back into court, for the 2027-28 season.
-        <ul>
-          <li>Sharr White ("Palm Royale," "Presumed Innocent") writes and showruns for Fox Entertainment Studios and Scott Free Productions.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">Deadline / Variety</span>
-    <a class="read-more" href="https://deadline.com/2026/09/all-the-rage-series-netflix-liz-feldman-1237105958/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-tv">
+      <h3>Nielsen Cuts Streaming-Ratings Delay From 4 Weeks to 11 Days</h3>
+      <ul>
+        <li>Faster reporting's first Top 10 is led by "Reacher" (1.25B minutes, its fourth straight week over 1B) and "Outer Banks," with HBO's new "Lanterns" debuting at 500M minutes.
+          <ul>
+            <li>Comes as the 78th Emmy Awards drew 6.8M viewers on NBC/Peacock, down 10% from last year's 7.59M.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag wire-tag">Nielsen / Variety</span>
+      <a href="https://www.nielsen.com/news-center/2026/nielsen-accelerates-streaming-data-delivery-with-enhancements-to-streaming-content-ratings/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-tv">
-    <div class="card-meta"><span class="source-tag wire-tag">TVLine</span></div>
-    <h3>Renewal Wave: 'Slow Horses' Locked Through Season 8, 'MobLand' Gets Two More Seasons</h3>
-    <ul>
-      <li>Apple TV renewed "Slow Horses" through seasons 6, 7 and 8 — season 8 adapts Mick Herron's "Clown Town" — while Paramount+ picked up "MobLand" for two more seasons.
-        <ul>
-          <li>Also renewed: Comedy Central's "South Park" (season 29), Netflix's "Monster" anthology (season 4, "The Lizzie Borden Story"), and Starz's "Outlander: Blood of My Blood" (season 2).</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">TVLine</span>
-    <a class="read-more" href="https://www.tvline.com/2196897/canceled-renewed-tv-shows-scorecard-premiere-dates/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-tv">
+      <h3>Fox Greenlights Edie Falco Legal Drama; "Sweet Magnolias" Says Goodbye</h3>
+      <ul>
+        <li>Fox ordered "Katie Greaves" straight-to-series, starring Falco as a former New Hampshire public defender, from creator Sharr White, for the 2027-28 season.</li>
+        <li>Netflix's "Sweet Magnolias" wraps its run, with its creator reflecting on the Serenity, S.C.-set series in a new Deadline interview; Netflix also ordered a new Liz Feldman dark comedy, "All the Rage," and extended her overall deal.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Today</span>
+      <a href="https://deadline.com/2026/09/sweet-magnolias-creator-bids-farewell-after-show-ends-1237108545/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-tv">
-    <div class="card-meta"><span class="source-tag wire-tag">TVGuide</span></div>
-    <h3>Prime Video Cancels 'Spider-Noir' Despite Five Emmy Wins, as 'Ransom Canyon' and 'P-Valley' Also Wrap</h3>
-    <ul>
-      <li>Nicolas Cage's noir series was cut despite its awards haul; Netflix's "Ransom Canyon" (Josh Duhamel, Minka Kelly) ends after two seasons on soft viewership.
-        <ul>
-          <li>Starz's "P-Valley" will conclude with a season 3 premiering Dec. 4, which creator Katori Hall says ends the story "on its own terms"; Peacock's "M.I.A." was also canceled after one season.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">TVGuide</span>
-    <a class="read-more" href="https://www.tvguide.com/news/canceled-renewed-tv-shows-september-2026/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-tv">
-    <div class="card-meta"><span class="source-tag newsletter-tag">Entertainment Strategy Guy</span></div>
-    <h3>Disney+ Reverses Course, Un-Orders a Second Season of 'Wonder Man'</h3>
-    <ul>
-      <li>The Emmy-nominated series is done despite a 52% completion rate, because it dumped all episodes at once instead of releasing weekly; no movie is in the works.
-        <ul>
-          <li>Elsewhere, Netflix reversed its own cancellation of "Beauty in Black" for a new season, and the World Series of Poker is returning to ESPN after four years on CBS.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag newsletter-tag">Entertainment Strategy Guy</span>
-    <a class="read-more" href="https://entertainment.substack.com/p/un-orders-are-back-along-with-un" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-tv">
+      <h3>Late Night's Decline Deepens as Kimmel's Future Stays Unresolved</h3>
+      <ul>
+        <li>THR reports every late-night show except "SNL" has now been canceled or had its budget slashed.
+          <ul>
+            <li>Jimmy Kimmel's ABC deal ends next year with no word yet on renewal.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Weekender</span>
+      <a href="https://www.hollywoodreporter.com/" class="read-more">Read More →</a>
+    </div>
   </div>
 
   <!-- 5. STREAMING & BOX OFFICE -->
-  <div class="section-header">🟣 Streaming &amp; Box Office</div>
+  <div class="section">
+    <h2 class="section-title">🟣 Streaming &amp; Box Office</h2>
 
-  <div class="card card-streaming">
-    <div class="card-meta"><span class="source-tag wire-tag">Deadline</span></div>
-    <h3>Sony's 'Resident Evil' Reboot Smashes the Franchise's Preview Record by 8x</h3>
-    <ul>
-      <li>Zach Cregger's reboot pulled an estimated $8-9M in Thursday previews, blowing past the prior franchise record of just $1M set by 2016's "The Final Chapter."
-        <ul>
-          <li>Rotten Tomatoes has it at a franchise-best 96% critics/91% audience; weekend tracking has been revised up from the $40-50M range to potentially above $50M on a reported $75M budget.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/09/box-office-resident-evil-1237107316/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-streaming">
+      <h3>ESPN and Disney Raise Streaming Prices as Football Season Kicks Off</h3>
+      <ul>
+        <li>ESPN raised prices on its "ESPN Unlimited" DTC plan effective Sept. 17 — its first increase since launch about a year ago.
+          <ul>
+            <li>Disney separately raised its legacy Disney+/Hulu/ESPN+ bundle to $27.99/month, effective the same day.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag wire-tag">Variety</span>
+      <a href="https://variety.com/2026/tv/news/espn-streaming-price-increase-espn-unlimited-1236841594/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-streaming">
-    <div class="card-meta"><span class="source-tag newsletter-tag">The Wakeup</span></div>
-    <h3>Roku Strikes Ad-Data Deal With Agency Horizon to Sharpen CTV Targeting</h3>
-    <ul>
-      <li>The platform will share viewership data directly into Horizon's ad-buying systems, its second major distribution push this week after adding 30 new streaming bundles.</li>
-    </ul>
-    <span class="source-tag newsletter-tag">The Ankler / The Wakeup</span>
-    <a class="read-more" href="https://advertising.roku.com/learn/resources/unlocking-ctv-precision" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-streaming">
+      <h3>Sony's "Resident Evil" Reboot Tracking for $40-50M Opening</h3>
+      <ul>
+        <li>Zach Cregger's reboot opens on roughly 3,500 screens against a $75M budget; studio projections put the three-day take in the $40M range, with some tracking suggesting upside past $50M.
+          <ul>
+            <li>Final weekend numbers were not yet confirmed as of this morning — actuals typically post Monday.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Today</span>
+      <a href="https://www.hollywoodreporter.com/movies/movie-news/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-streaming">
-    <div class="card-meta"><span class="source-tag wire-tag">Variety / THR</span></div>
-    <h3>Nielsen Cuts Its Streaming Reporting Lag by More Than 60%, to 11 Days</h3>
-    <ul>
-      <li>The six-year-old 28-day lag on weekly Streaming Top 10 charts is dropping to 11 days, giving the industry a much more current read on viewing.
-        <ul>
-          <li>First data under the new pace: Prime Video's "Reacher" led all streaming with 1.25B minutes watched, its 4th straight week above 1B; HBO's "Lanterns" debuted on the chart with 500M minutes for Aug. 31-Sept. 6.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">Variety</span>
-    <a class="read-more" href="https://variety.com/2026/tv/news/nielsen-streaming-top-10-update-delay-1236866094/" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-streaming">
+      <h3>AMC Networks Sells ALLBLK to Charles D. King's MACRO</h3>
+      <ul>
+        <li>AMC Networks CEO Kristin Dolan confirmed the sale of the Black-audience streaming platform to producer Charles D. King's MACRO, continuing AMC's trimming of niche streaming assets.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Weekender</span>
+      <a href="https://www.hollywoodreporter.com/" class="read-more">Read More →</a>
+    </div>
   </div>
 
   <!-- 6. MUSIC & CELEBRITY -->
-  <div class="section-header">🎵 Music &amp; Celebrity</div>
+  <div class="section">
+    <h2 class="section-title">🎵 Music &amp; Celebrity</h2>
 
-  <div class="card card-music">
-    <div class="card-meta"><span class="source-tag wire-tag">Surfer</span></div>
-    <h3>Lady Gaga Seeks $232K in Legal Fees After Crushing Surf Company in Trademark Suit</h3>
-    <ul>
-      <li>Having already won her $100M "Mayhem" trademark case and gotten Lost Surfboards' countersuit dismissed, Gaga's team is now calling the whole fight a "publicity stunt" and billing for it.</li>
-    </ul>
-    <span class="source-tag wire-tag">Surfer / Kiss 95.1</span>
-    <a class="read-more" href="https://kiss951.com/2026/09/17/lady-gaga-seeks-232k-in-legal-fees-after-winning-trademark-case-against-surf-company/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-music">
+      <h3>SiriusXM Wins Bidding War for "Giggly Squad" Podcast</h3>
+      <ul>
+        <li>Hannah Berner and Paige DeSorbo's podcast drew roughly $150-160M offers from three suitors before landing at SiriusXM, per THR and The Ankler.
+          <ul>
+            <li>SiriusXM's Scott Greenstein framed the deal as proof podcast/creator properties now command scripted-TV-level license fees.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag newsletter-tag">The Ankler / THR</span>
+      <a href="https://theankler.com/inside-the-giggly-squad-podcast-bidding-war-150m-offers-3-suitors" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-music">
-    <div class="card-meta"><span class="source-tag wire-tag">NME</span></div>
-    <h3>Jimmy Eat World Pulls Festival Dates as Jim Adkins Recovers From Emergency Eye Surgery</h3>
-    <ul>
-      <li>The frontman suffered a detached retina and had emergency surgery, forcing the band to withdraw from its Shaky Knees and Louder Than Life sets.</li>
-    </ul>
-    <span class="source-tag wire-tag">NME / E! News</span>
-    <a class="read-more" href="https://www.nme.com/news/music/jimmy-eat-world-cancel-tour-dates-jim-adkins-recovers-from-emergency-surgery-3969339" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-music">
-    <div class="card-meta"><span class="source-tag wire-tag">CBC</span></div>
-    <h3>AC/DC's Toronto Stadium Show Canceled After Storm Wrecks the Venue</h3>
-    <ul>
-      <li>Sept. 16's Rogers Stadium concert was scrapped after a Sept. 2 microburst caused significant structural damage; Live Nation is reportedly eyeing 2027 makeup dates.</li>
-    </ul>
-    <span class="source-tag wire-tag">CBC / Ultimate Classic Rock</span>
-    <a class="read-more" href="https://www.cbc.ca/news/canada/toronto/acdc-concert-cancelled-rogers-stadium-9.7338010" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-music">
-    <div class="card-meta"><span class="source-tag wire-tag">Stereogum</span></div>
-    <h3>Bob Dylan Announces 39-CD 'Rolling Thunder Revue' Box Set</h3>
-    <ul>
-      <li>The 50th-anniversary release packs 371 previously unreleased tracks (~31 hours) from the 1975-76 tour with Joan Baez, due out this November.</li>
-    </ul>
-    <span class="source-tag wire-tag">Stereogum / Relix</span>
-    <a class="read-more" href="https://stereogum.com/2511482/bob-dylan-announces-39-cd-rolling-thunder-revue-box-set-with-371-previously-unreleased-tracks/news" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-music">
+      <h3>In Memoriam: Motown's Rosalind Ashford and Songwriter Duncan Sheik</h3>
+      <ul>
+        <li>Rosalind Ashford, an original member of Martha and the Vandellas ("Dancing in the Street," "Heat Wave"), died at 83.</li>
+        <li>Singer-songwriter Duncan Sheik, best known for "Barely Breathing," died at 56.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR Weekender</span>
+      <a href="https://www.hollywoodreporter.com/" class="read-more">Read More →</a>
+    </div>
   </div>
 
   <!-- 7. TECHNOLOGY -->
-  <div class="section-header">💻 Technology</div>
+  <div class="section">
+    <h2 class="section-title">💻 Technology</h2>
 
-  <div class="card card-tech">
-    <div class="card-meta"><span class="source-tag wire-tag">Windows Central</span></div>
-    <h3>Microsoft Sets Oct. 7 for Its First Major Windows/Surface Hardware Event in Two Years</h3>
-    <ul>
-      <li>Satya Nadella, Nvidia's Jensen Huang, and Windows/Surface chief Pavan Davuluri are confirmed to appear in San Francisco; Microsoft says Windows 12 will not be announced.
-        <ul>
-          <li>Expected hardware includes a Surface Laptop Ultra and a Surface RTX Spark Dev Box built around Nvidia's Blackwell chip.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">Windows Central</span>
-    <a class="read-more" href="https://www.windowscentral.com/microsoft/windows-11/microsoft-surface-event-announced-for-october-7-heres-everything-we-know-so-far" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-tech">
+      <h3>Image Host Gyazo Discloses Breach Exposing 23.6M User Records</h3>
+      <ul>
+        <li>Kyoto-based operator Helpfeel confirmed attackers exploited an image-upload flaw to access its database.
+          <ul>
+            <li>23.62M user records (emails, password hashes, session IDs) and 490M image-metadata records were exposed; no payment data taken.</li>
+            <li>Timeline: suspicious activity detected Sept. 11, patched Sept. 12, regulator notified Sept. 15, public disclosure Sept. 16.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag wire-tag">The Hacker News</span>
+      <a href="https://thehackernews.com/2026/09/gyazo-breach-exposes-2362-million-user.html" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-tech">
-    <div class="card-meta"><span class="source-tag wire-tag">Techzine</span></div>
-    <h3>Apple Reportedly Building Its Own AI Servers In-House</h3>
-    <ul>
-      <li>Apple is developing proprietary servers pairing its own M8 Ultra chips with Nvidia networking technology, signaling a shift away from renting cloud AI capacity.
-        <ul>
-          <li>A broader infrastructure deal with Nvidia is reportedly being eyed for a buildout around 2029.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">Techzine / Yahoo Finance</span>
-    <a class="read-more" href="https://www.techzine.eu/news/infrastructure/144345/apple-is-developing-its-own-ai-server-with-m8-ultra-chips/" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-tech">
+      <h3>Motion-Gaming Hardware Maker Nex Playground Raises $150M+ for Global Push</h3>
+      <ul>
+        <li>Round drew Baillie Gifford, BAI Capital, NBA Investments, Logitech, Medici Capital Partners and Raine Group.
+          <ul>
+            <li>Hardware sales have passed one million units; Niantic's Jeff Shouger joins as CFO.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag wire-tag">Variety</span>
+      <a href="https://variety.com/2026/gaming/news/nex-playground-150-million-funding-1236865417/" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card card-tech">
+      <h3>Meta Connect 2026 Set for Sept. 23-24, Wearables and AI in Focus</h3>
+      <ul>
+        <li>Meta's annual keynote is scheduled for later this week (4pm PT), with pre-event coverage pointing to smart-glasses and wearables updates as the centerpiece.</li>
+      </ul>
+      <span class="source-tag wire-tag">Meta / Mixed News</span>
+      <a href="https://www.meta.com/connect/" class="read-more">Read More →</a>
+    </div>
   </div>
 
   <!-- 8. ARTIFICIAL INTELLIGENCE -->
-  <div class="section-header">🤖 Artificial Intelligence</div>
+  <div class="section">
+    <h2 class="section-title">🤖 Artificial Intelligence</h2>
 
-  <div class="card card-ai">
-    <div class="card-meta"><span class="source-tag wire-tag">TechCrunch</span></div>
-    <h3>Google DeepMind Launches an Institute to Widen the AGI Safety Debate</h3>
-    <ul>
-      <li>Demis Hassabis and DeepMind co-founder Shane Legg are backing a new outfit publishing public essays on AGI timelines and risk.
-        <ul>
-          <li>It comes weeks after Hassabis's proposed industry-funded oversight body was shelved once Zuckerberg, Musk and Huang lobbied Trump against it.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">TechCrunch / Axios</span>
-    <a class="read-more" href="https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-ai">
+      <h3>AI Safety Splits Into a Culture War: Amodei and Altman vs. Zuckerberg and Huang</h3>
+      <ul>
+        <li>Anthropic's Dario Amodei is pushing frontier labs to "pace" development and allow independent evaluators; Meta's Mark Zuckerberg and Nvidia's Jensen Huang argue markets already discipline AI firms and reject new rules.
+          <ul>
+            <li>Canadian lab Cohere warns a safety regime run by dominant labs risks becoming "a cartel by any other name"; CEO Aidan Gomez wants an evidence-based framework with independent testing.</li>
+            <li>Per WSJ, Zuckerberg, Huang and Elon Musk separately lobbied Trump against a Demis Hassabis-proposed industry oversight body modeled on FINRA; Trump hasn't moved forward with it.</li>
+          </ul>
+        </li>
+        <li>Effective Altruism has become a right-wing target (a New York Post cover attacked Amodei's "handpicked" AI evaluators) even as a new poll finds 63% of Americans see at least a "moderate" risk from advanced AI.</li>
+      </ul>
+      <span class="source-tag newsletter-tag">Eye on AI</span>
+      <a href="https://fortune.com/section/eye-on-ai/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-ai">
-    <div class="card-meta"><span class="source-tag wire-tag">Bloomberg</span></div>
-    <h3>Anthropic Says Claude Now Drives 26% of Its Own R&amp;D</h3>
-    <ul>
-      <li>The company says Claude is "helping build the next version of itself," with Claude-driven work now accounting for more than a quarter of Anthropic's internal research.
-        <ul>
-          <li>The disclosure lands as CEO Dario Amodei pushes rivals to slow down — even as Anthropic's IPO reportedly remains on track for a Nasdaq listing this year.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">Bloomberg</span>
-    <a class="read-more" href="https://www.bloomberg.com/news/articles/2026-09-17/anthropic-says-claude-drives-26-of-its-research-and-development" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-ai">
+      <h3>Crusoe Raises $3.9B, Nearly Triples Valuation to $30.9B</h3>
+      <ul>
+        <li>Series F led by Atreides Management, Mubadala Capital and Valor Equity Partners, with Nvidia, GIC and Qatar Investment Authority also participating.
+          <ul>
+            <li>Valuation jumped from $1.38B just 10 months ago; Crusoe builds AI data centers and modular "Spark" units, and counts a $13B, five-year compute contract with Jane Street among its deals.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag wire-tag">TechCrunch</span>
+      <a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-ai">
-    <div class="card-meta"><span class="source-tag wire-tag">NPR</span></div>
-    <h3>NPR: Google Is Helping Write State AI-Chatbot Safety Laws — While Lobbying for Carve-Outs</h3>
-    <ul>
-      <li>An investigation finds Google is actively drafting state-level chatbot safety legislation while simultaneously pushing for loopholes and exemptions in those same bills.
-        <ul>
-          <li>It's a concrete example of the "cartel" dynamic Cohere warned about this week, in which dominant labs help set the very rules meant to govern them.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">NPR</span>
-    <a class="read-more" href="https://www.npr.org/2026/09/18/nx-s1-5968878/ai-chatbots-safety-regulation-google" target="_blank" rel="noopener">Read More →</a>
-  </div>
+    <div class="card card-ai">
+      <h3>AI "Actress" Tilly Norwood's Press Tour Glitches Live on Camera</h3>
+      <ul>
+        <li>Promoting the film "Misaligned" across 75 simultaneous interviews, Particle6's AI performer abruptly spoke unprompted Chinese for over 10 seconds when asked if other cast members were AI.
+          <ul>
+            <li>In character, she blamed "a little hiccup" and "wires get a bit crossed"; TechCrunch speculates the flub may be deliberate marketing amid ongoing Hollywood AI-actor backlash.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag wire-tag">TechCrunch</span>
+      <a href="https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/" class="read-more">Read More →</a>
+    </div>
 
-  <div class="card card-ai">
-    <div class="card-meta"><span class="source-tag newsletter-tag">The Ankler</span></div>
-    <h3>Hollywood's Secret AI Coalition Goes Public With a "Human Generative Workflows" Framework</h3>
-    <ul>
-      <li>The Kathleen Kennedy-led group's previously private framework surfaced this week via The Ankler, defining which AI-assisted work stays under human creative control and copyright-eligible.
-        <ul>
-          <li>It arrives as Anthropic and OpenAI warn that increasingly autonomous agents could enable cyberattacks — a risk Ankler columnist Erik Barmack says is acute for studios: "imagine a world in which there are thousands of Sony hacks happening in real time."</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag newsletter-tag">The Ankler</span>
-    <a class="read-more" href="https://theankler.com/first-look-hollywoods-secret-ai-talks-go-public-heres-the-plan/" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-ai">
+      <h3>Alibaba Releases Omnimodal Qwen3.8-Omni-Flash</h3>
+      <ul>
+        <li>New model processes text, image, audio and video input with a 1M-token context window; Alibaba claims a 25%+ benchmark gain over its predecessor across 29 evaluations.
+          <ul>
+            <li>API-only at $0.15/$0.47 per million tokens; no open weights released.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="source-tag wire-tag">Digital Applied</span>
+      <a href="https://www.digitalapplied.com/blog/ai-model-releases-september-2026-tracker" class="read-more">Read More →</a>
+    </div>
   </div>
 
   <!-- 9. ICYMI -->
-  <div class="section-header">🔁 In Case You Missed It (ICYMI)</div>
+  <div class="section">
+    <h2 class="section-title">🔁 In Case You Missed It (ICYMI)</h2>
 
-  <div class="card card-icymi">
-    <div class="icymi-meta">
-      <span class="badge-ongoing">🔁 Ongoing</span>
-      <span class="badge-running">Running 10 days</span>
-      <span class="badge-updated">✅ Updated Today</span>
+    <div class="card card-icymi">
+      <div class="icymi-meta">
+        <span class="badge-ongoing">🔁 Ongoing</span>
+        <span class="badge-running">Running 5 days</span>
+        <span class="badge-updated">✅ Updated Today</span>
+      </div>
+      <h3>Paramount-WBD Merger Endgame &amp; Ellison's California Standoff</h3>
+      <ul>
+        <li>Paramount and CA AG Bonta are reportedly in "advanced talks" to settle the antitrust suit as Ellison's self-imposed Oct. 1 relocation deadline nears and a $7M-a-day fee looms on the stalled $110B deal. <span class="chip-new">New Today</span></li>
+      </ul>
+      <span class="source-tag newsletter-tag">Puck / Bloomberg</span>
+      <a href="https://puck.news/ellisons-paramount-relo-threat-real-or-negotiation-ploy/" class="read-more">Read More →</a>
     </div>
-    <h3>Paramount-WBD Merger: Antitrust Bond Fight</h3>
-    <ul>
-      <li>FCC separately cleared the merger's foreign-ownership structure Sept. 17; DOJ and FCC have now both sided with Paramount, leaving the states' March 2027 antitrust trial as the last major hurdle. <span class="chip-new">New Today</span>
-        <ul>
-          <li>The ~$1.9B bond question — and the Oct. 1 ticking fee — remain unresolved; see today's Deep Dive for the full picture.</li>
-        </ul>
-      </li>
-    </ul>
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/09/fcc-foreign-ownership-paramount-warner-bros-discovery-1237106980/" target="_blank" rel="noopener">Read More →</a>
+
+    <div class="card card-icymi">
+      <div class="icymi-meta">
+        <span class="badge-ongoing">🔁 Ongoing</span>
+        <span class="badge-running">Running 4 days</span>
+        <span class="badge-updated">✅ Updated Today</span>
+      </div>
+      <h3>Federal Film &amp; TV Tax Incentive Bill</h3>
+      <ul>
+        <li>A bipartisan bill could reach the House floor as soon as next week after a new production caucus formed and Netflix, NBCU and Disney chiefs lobbied Capitol Hill this week. <span class="chip-new">New Today</span></li>
+      </ul>
+      <span class="source-tag newsletter-tag">The Ankler</span>
+      <a href="https://theankler.com/scoop-federal-incentive-bill-could-come-next-week/" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card card-icymi">
+      <div class="icymi-meta">
+        <span class="badge-ongoing">🔁 Ongoing</span>
+        <span class="badge-running">Running 3 days</span>
+        <span class="badge-updated">✅ Updated Today</span>
+      </div>
+      <h3>Alex Gibney's "Musk" Documentary Distribution Fight</h3>
+      <ul>
+        <li>Universal is now leaning toward releasing the film after earlier cold feet, while Bleecker Street moved its US theatrical release up to Oct. 9. <span class="chip-new">New Today</span></li>
+      </ul>
+      <span class="source-tag newsletter-tag">THR / Puck</span>
+      <a href="https://www.hollywoodreporter.com/" class="read-more">Read More →</a>
+    </div>
+    <p class="gap-note">Note: this is the first edition of the tracker, so ICYMI was seeded fresh from today's reporting rather than carried forward from a prior day's file.</p>
   </div>
 
-  <div class="card card-icymi">
-    <div class="icymi-meta">
-      <span class="badge-ongoing">🔁 Ongoing</span>
-      <span class="badge-running">Running 6 days</span>
-      <span class="badge-updated">✅ Updated Today</span>
+  <!-- 10. DEEP DIVE -->
+  <div class="section">
+    <h2 class="section-title">📈 Today's Deep Dive</h2>
+
+    <div class="card card-deepdive">
+      <h3>Why Ellison's "Ninth-Inning" Settlement Talks Are Really a Game of Chicken With California</h3>
+
+      <span class="deep-label">Why It Matters</span>
+      <ul>
+        <li>Ellison's self-imposed Oct. 1 relocation deadline is squeezing CA AG Rob Bonta to settle before a $7M-a-day fee starts accruing on the stalled $110B Paramount-WBD deal, per Puck's Matt Belloni.</li>
+        <li>Bonta's public line — "They own it. It lies at their feet." — signals Sacramento isn't spooked yet, even as Texas officials and Nashville boosters actively court Paramount's headquarters.</li>
+        <li>THR reports Bonta's possible leverage points include forcing WBD and Paramount to operate independently short-term, outside content-licensing commitments, a jump to 30 combined films a year (from 3), and independent oversight of CBS News and CNN — any of which would reshape the merged company for years.</li>
+      </ul>
+
+      <span class="deep-label">The Money</span>
+      <ul>
+        <li>Ellison, RedBird Capital and Middle East backers are on the hook for roughly $80B in debt if the deal closes, with a $1.9B bond hearing next week that Paramount wants states and the WGA to help front.</li>
+        <li>The FCC already cleared about $24B in foreign financing (Saudi PIF, Qatar Investment Authority, Abu Dhabi Investment Authority), handing foreign investors a 49.5% stake in the combined company and raising the cost of leaving the antitrust piece unresolved.</li>
+      </ul>
+
+      <span class="deep-label">Historical Context</span>
+      <ul>
+        <li>THR draws a parallel to 1934, when studio chiefs threatened to flee California for Florida over a gubernatorial candidate — a threat that proved to be a bluff, suggesting Ellison's relocation talk may be leverage more than an actual plan.</li>
+      </ul>
+
+      <span class="deep-label">Watch For</span>
+      <ul>
+        <li>Whether a settlement lands before Ellison's Oct. 1 deadline, and whether its terms include the independent-oversight conditions floated for CBS News and CNN.</li>
+        <li>Any confirmation of Nashville as the "first choice" alternate HQ if talks stall — real estate scouting there has already been reported.</li>
+      </ul>
+
+      <span class="source-tag newsletter-tag">Puck / THR</span>
+      <a href="https://puck.news/ellisons-paramount-relo-threat-real-or-negotiation-ploy/" class="read-more">Read More →</a>
     </div>
-    <h3>Kimmel-Talarico FCC Standoff</h3>
-    <ul>
-      <li>Escalated: FCC Chairman Brendan Carr publicly accused Rep. James Talarico of running a "hoax" with Kimmel over the equal-time threat. <span class="chip-new">New Today</span></li>
-    </ul>
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/09/jimmy-kimmel-james-talarico-fcc-1237100486/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-icymi">
-    <div class="icymi-meta">
-      <span class="badge-ongoing">🔁 Ongoing</span>
-      <span class="badge-running">Running 11 days</span>
-    </div>
-    <h3>Fox/Roku Merger: DOJ's Second Request Stretches Review Timeline</h3>
-    <ul>
-      <li>No new developments today; regulators are still probing whether Fox would favor its own programming through Roku's platform.</li>
-    </ul>
-    <span class="source-tag wire-tag">TechCrunch / Benzinga</span>
-    <a class="read-more" href="https://techcrunch.com/2026/09/09/doj-wants-more-answers-on-foxs-22b-roku-deal/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-icymi">
-    <div class="icymi-meta">
-      <span class="badge-ongoing">🔁 Ongoing</span>
-      <span class="badge-running">Running 11 days</span>
-      <span class="badge-updated">✅ Updated Today</span>
-    </div>
-    <h3>Ellison's Paramount: A Pattern of Missed Bets</h3>
-    <ul>
-      <li>Deadline now ties the California relocation threat directly to the frozen Paramount-WBD merger, reportedly pushed back as far as June 2027 amid the state AGs' suit, with termination fees mounting while it sits stalled. <span class="chip-new">New Today</span></li>
-    </ul>
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/09/paramount-leaving-california-merger-lawsuit-1237105417/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-icymi">
-    <div class="icymi-meta">
-      <span class="badge-ongoing">🔁 Ongoing</span>
-      <span class="badge-running">Running 9 days</span>
-    </div>
-    <h3>Can R.E.M. Beauty Survive Ariana Grande's Step Back?</h3>
-    <ul>
-      <li>No new developments today; the brand is still absorbing its CEO's departure just after Grande said she's stepping back from visibility.</li>
-    </ul>
-    <span class="source-tag newsletter-tag">Puck / Line Sheet</span>
-    <a class="read-more" href="https://puck.news/can-rem-beauty-survive-arianas-step-back/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-icymi">
-    <div class="icymi-meta">
-      <span class="badge-ongoing">🔁 Ongoing</span>
-      <span class="badge-running">Running 3 days</span>
-    </div>
-    <h3>Amazon Circling the Emmys' Own Broadcast Rights</h3>
-    <ul>
-      <li>No new developments today; talks reportedly continue for Amazon Prime Video to take over the Emmy telecast starting in 2027.</li>
-    </ul>
-    <span class="source-tag wire-tag">Variety / Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/09/amazon-talks-take-over-emmys-tv-deal-1237104208/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-icymi">
-    <div class="icymi-meta">
-      <span class="badge-ongoing">🔁 Ongoing</span>
-      <span class="badge-running">Running 3 days</span>
-    </div>
-    <h3>AI "Synthetic Sexualization" Legal Test Cases</h3>
-    <ul>
-      <li>Q'orianka Kilcher's anti-SLAPP hearing against James Cameron over Avatar's Neytiri was scheduled for today, Sept. 18; no ruling has been reported yet.</li>
-    </ul>
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/synthetic-sexualization-ai-laws-new-hollywood-test/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <!-- 10. TODAY'S DEEP DIVE -->
-  <div class="section-header">📈 Today's Deep Dive</div>
-
-  <div class="card card-deepdive">
-    <div class="card-meta"><span class="source-tag newsletter-tag">What I'm Hearing / Deadline</span></div>
-    <h3>Ellison's California Threat Isn't About Texas — It's Leverage in a Bond Fight He's Already Winning</h3>
-
-    <span class="deep-label">Why It Matters</span>
-    <ul>
-      <li>Matthew Belloni argues the relocation "leaks" — a commissioned economic-impact report, a Politico story about Nashville real estate, TMZ's walked-back announcement claim — are pressure tactics aimed at AG Rob Bonta before the Oct. 1 ticking-fee deadline, not evidence of an actual move; Ellison has never publicly confirmed he's leaving.</li>
-      <li>Bonta isn't budging: his office calls the threat "blackmail" and says California's exit "lies at their feet," even as he racks up national press (Atlantic Festival, MS Now) that Belloni says the AG "covets."
-        <ul>
-          <li>Bonta made it official on the record Thursday, telling an Atlantic Festival panel in Manhattan: "They own it. It lies at their feet" — reiterating the threat isn't new and it's Ellison's call, not a response to his antitrust suit.</li>
-        </ul>
-      </li>
-      <li>The federal track is now going Paramount's way regardless: the FCC cleared the merger's foreign-ownership structure Sept. 17 and the DOJ has formally backed Paramount's bond demand — leaving only the states' March 2027 antitrust trial as a real obstacle.</li>
-    </ul>
-
-    <span class="deep-label">The Money</span>
-    <ul>
-      <li>Ellison, RedBird Capital and Middle East backers face roughly $80B in debt once the WBD deal closes — before counting any ticking fees — making a Texas- or Nashville-style incentive package a real cost offset, not just a threat.</li>
-      <li>A $7.2M-per-day fee starts Oct. 1 if the bond dispute isn't resolved, with the next hearing expected around Sept. 24 and settlement talks penciled in for Oct. 14-15.</li>
-    </ul>
-
-    <span class="deep-label">Historical Context</span>
-    <ul>
-      <li>Larry Ellison's Oracle ran this exact playbook — California to Austin in 2020, then Nashville in 2024 for a reported $65M grant and up to $250M in tax breaks — yet Oracle has still struggled to recruit tech talent to Tennessee, a warning sign for a business, like Paramount's, that depends on concentrated creative talent.</li>
-    </ul>
-
-    <span class="deep-label">Watch For</span>
-    <ul>
-      <li>Whether Ellison ever files an actual relocation plan rather than leaking through intermediaries, and whether Govs. Gavin Newsom and incoming AG candidate Xavier Becerra can broker a settlement before the Oct. 1 deadline or the November midterms raise the political stakes further.</li>
-    </ul>
-
-    <span class="source-tag newsletter-tag">Puck / What I'm Hearing</span>
-    <a class="read-more" href="https://puck.news/ellisons-paramount-relo-threat-real-or-negotiation-ploy/" target="_blank" rel="noopener">Read More →</a>
   </div>
 
   <!-- 11. BY THE NUMBERS -->
-  <div class="section-header">🔢 By the Numbers</div>
+  <div class="section">
+    <h2 class="section-title">🔢 By the Numbers</h2>
 
-  <div class="card card-numbers">
-    <div class="card-meta"><span class="source-tag wire-tag">Variety / THR</span></div>
-    <h3>1.25 Billion: The Minutes 'Reacher' Streamed in a Single Week</h3>
+    <div class="card card-numbers">
+      <h3>$1.3 Million a Day: The Economic Pitch Behind a Federal Film Tax Incentive</h3>
+      <span class="numbers-label">The Figure</span>
+      <ul><li>$1.3 million a day — the local economic injection MPA chief Charlie Rivkin says a single major studio production generates, per remarks at this week's Capitol Hill press conference.</li></ul>
+      <span class="numbers-label">Context</span>
+      <ul>
+        <li>An MPA study projects a federal incentive could lift the US share of global production to 65% from 39% today.</li>
+        <li>The same study estimates 143,500+ full-time jobs created annually if the bill passes.</li>
+      </ul>
+      <span class="numbers-label">So What</span>
+      <ul><li>The dollar figure is the industry's clearest pitch yet for why a usually gridlocked Congress formed a bipartisan production caucus within days.</li></ul>
+      <span class="source-tag newsletter-tag">The Ankler</span>
+      <a href="https://theankler.com/scoop-federal-incentive-bill-could-come-next-week/" class="read-more">Read More →</a>
+    </div>
 
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>Prime Video's "Reacher" led Nielsen's newly accelerated Streaming Top 10 with 1.25B minutes watched, its 4th consecutive week above the 1B-minute mark.</li>
-    </ul>
+    <div class="card card-numbers">
+      <h3>23.2 Million: Chiefs-Broncos Is the Biggest MNF Opener in Three Decades</h3>
+      <span class="numbers-label">The Figure</span>
+      <ul><li>23.2 million viewers watched ABC/ESPN's Chiefs-Broncos Monday Night Football opener, per The Ankler's Wakeup.</li></ul>
+      <span class="numbers-label">Context</span>
+      <ul>
+        <li>It's the largest MNF season-opening audience in roughly 30 years.</li>
+        <li>Yet the NFL's average opening-week audience is still down 13% year-over-year, to 19.5M.</li>
+      </ul>
+      <span class="numbers-label">So What</span>
+      <ul><li>Marquee live sports match-ups can still outperform even as the league's broader viewership trend softens.</li></ul>
+      <span class="source-tag newsletter-tag">The Ankler — The Wakeup</span>
+      <a href="https://theankler.com/dis-exec-shakeup-creator-push-continues/" class="read-more">Read More →</a>
+    </div>
 
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>The figure comes from Nielsen's first chart under its new 11-day reporting lag, cut from 28 days; HBO's "Lanterns" debuted the same week with 500M minutes.</li>
-    </ul>
+    <div class="card card-numbers">
+      <h3>$3.9 Billion: Crusoe's Raise Triples Its Valuation to $30.9B</h3>
+      <span class="numbers-label">The Figure</span>
+      <ul><li>$3.9 billion Series F, pushing Crusoe's valuation to $30.9B — up from $1.38B just ten months earlier.</li></ul>
+      <span class="numbers-label">Context</span>
+      <ul>
+        <li>Backers include Nvidia, GIC, Qatar Investment Authority and Mubadala Capital.</li>
+        <li>Crusoe's customers include Meta, Microsoft, Oracle and a $13B, five-year compute deal with Jane Street.</li>
+      </ul>
+      <span class="numbers-label">So What</span>
+      <ul><li>AI infrastructure investment shows no sign of slowing even as bubble concerns mount elsewhere in the sector.</li></ul>
+      <span class="source-tag wire-tag">TechCrunch</span>
+      <a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" class="read-more">Read More →</a>
+    </div>
 
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>Faster, more current viewership data raises the competitive stakes for streamers in real time, shrinking the window where a hit can be quietly building before the industry notices.</li>
-    </ul>
-
-    <span class="source-tag wire-tag">Variety</span>
-    <a class="read-more" href="https://variety.com/2026/tv/news/nielsen-streaming-top-10-update-delay-1236866094/" target="_blank" rel="noopener">Read More →</a>
+    <div class="card card-numbers">
+      <h3>23.6 Million: Records Exposed in the Gyazo Image-Host Breach</h3>
+      <span class="numbers-label">The Figure</span>
+      <ul><li>23.62 million user records and 490 million image-metadata records were exposed in a breach of image host Gyazo, disclosed Sept. 16.</li></ul>
+      <span class="numbers-label">Context</span>
+      <ul>
+        <li>Attackers exploited a flaw in the image-upload server; no payment data was taken.</li>
+        <li>Comes the same week Israeli startup MIND raised $72M for AI-era data-loss-prevention tools.</li>
+      </ul>
+      <span class="numbers-label">So What</span>
+      <ul><li>File- and image-hosting platforms are emerging as a soft target, reinforcing demand for the next generation of data-security tooling.</li></ul>
+      <span class="source-tag wire-tag">The Hacker News</span>
+      <a href="https://thehackernews.com/2026/09/gyazo-breach-exposes-2362-million-user.html" class="read-more">Read More →</a>
+    </div>
   </div>
 
-  <div class="card card-numbers">
-    <div class="card-meta"><span class="source-tag wire-tag">Deadline</span></div>
-    <h3>8x: 'Resident Evil' Shatters Its Franchise's Preview Record</h3>
-
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>Sony's "Resident Evil" reboot pulled an estimated $8-9M in Thursday previews — more than 8 times the prior franchise record of $1M, set by 2016's "The Final Chapter."</li>
-    </ul>
-
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>The film also holds a franchise-best 96% critics score and 91% audience score on Rotten Tomatoes, and weekend tracking has been revised upward to potentially above $50M on a $75M budget.</li>
-    </ul>
-
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>A 20-plus-year-old video-game franchise just posted its best-ever numbers by leaning on genuine critical validation rather than nostalgia alone, a data point other legacy-IP reboots will be watching closely.</li>
-    </ul>
-
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/09/box-office-resident-evil-1237107316/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-numbers">
-    <div class="card-meta"><span class="source-tag wire-tag">Bloomberg</span></div>
-    <h3>26%: How Much of Anthropic's Own R&amp;D Is Now Done by Claude</h3>
-
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>Anthropic says Claude now drives more than a quarter — 26% — of the company's internal research and development work.</li>
-    </ul>
-
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>The disclosure lands the same week CEO Dario Amodei is publicly urging frontier labs to slow down, while Anthropic's IPO reportedly remains on track for a Nasdaq listing this year.</li>
-    </ul>
-
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>The AI-building-AI number complicates the industry's own "we need guardrails" messaging, and will fuel skeptics who argue commercial pressure to accelerate is outrunning the safety rhetoric.</li>
-    </ul>
-
-    <span class="source-tag wire-tag">Bloomberg</span>
-    <a class="read-more" href="https://www.bloomberg.com/news/articles/2026-09-17/anthropic-says-claude-drives-26-of-its-research-and-development" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-numbers">
-    <div class="card-meta"><span class="source-tag wire-tag">Deadline</span></div>
-    <h3>~49.5%: The Foreign Ownership Stake the FCC Just Cleared for Paramount-Warner</h3>
-
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>The FCC waived its 25% foreign-equity cap to approve up to roughly 49.5% aggregate foreign ownership in the combined Paramount-WBD, including a 15.1% stake for Saudi Arabia's PIF.</li>
-    </ul>
-
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>The Ellison family and RedBird Capital retain 100% voting control; Democratic Commissioner Anna Gomez dissented over handing "repressive governments" indirect stakes in a major U.S. media company.</li>
-    </ul>
-
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>With the FCC and DOJ both now behind Paramount, the merger's fate rests almost entirely on the states' March 2027 antitrust trial — raising the stakes of the bond fight and relocation threat (see Deep Dive).</li>
-    </ul>
-
-    <span class="source-tag wire-tag">Deadline</span>
-    <a class="read-more" href="https://deadline.com/2026/09/fcc-foreign-ownership-paramount-warner-bros-discovery-1237106980/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-  <div class="card card-numbers">
-    <div class="card-meta"><span class="source-tag newsletter-tag">The Ankler</span></div>
-    <h3>$150 Million: What SiriusXM Paid to Keep 'Giggly Squad' Away From Rivals</h3>
-
-    <span class="numbers-label">The Figure</span>
-    <ul>
-      <li>SiriusXM's new multiyear deal for Hannah Berner and Paige DeSorbo's "Giggly Squad" came after offers reportedly reached $150M across three competing suitors.</li>
-    </ul>
-
-    <span class="numbers-label">Context</span>
-    <ul>
-      <li>The show joins Conan O'Brien, SmartLess and Call Her Daddy on Sirius's podcast roster, moving over from Acast.</li>
-    </ul>
-
-    <span class="numbers-label">So What</span>
-    <ul>
-      <li>Legacy audio platforms are now bidding for creator-led podcasts with the same intensity once reserved for scripted TV talent, a sign of how much leverage top creators command.</li>
-    </ul>
-
-    <span class="source-tag newsletter-tag">The Ankler / Like &amp; Subscribe</span>
-    <a class="read-more" href="https://theankler.com/inside-the-giggly-squad-podcast-bidding-war-150m-offers-3-suitors/" target="_blank" rel="noopener">Read More →</a>
-  </div>
-
-</div>
-
-<div class="footer">
-  <p><strong>Daily Entertainment &amp; Tech Update</strong> — an automated morning digest of entertainment, media and technology news.</p>
-  <p style="margin-top:8px;">Refreshed 1:27 PM ET, Sept. 18, 2026 · Updated automatically each morning · Powered by Claude &nbsp;·&nbsp; Sources: theankler.com + puck.news (direct), Fortune's Eye on AI, Bloomberg, TechCrunch, NPR, Deadline, TVLine, The Hollywood Reporter, Variety, The New York Times, and Gmail newsletters at messingerwork@gmail.com.</p>
-  <p class="copyright">This digest is compiled from publicly available reporting for personal use. All rights to the underlying articles belong to their original publishers.</p>
 </div>
 
 </body>
